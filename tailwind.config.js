@@ -5,12 +5,12 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'comfortaa': "'Comfortaa', cursive",
+        'sans': "'Comfortaa', cursive",
         'poppins': 'Poppins, sans-serif'
       },
       colors: {
         primary: "#5FCCE4",
-        secondary: "#E86158",
+        secondary: "#5A6DE0",
         accent: "black",
       },
       
