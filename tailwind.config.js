@@ -6,7 +6,8 @@ module.exports = {
     extend: {
       fontFamily: {
         'sans': "'Comfortaa', cursive",
-        'poppins': 'Poppins, sans-serif'
+        'poppins': 'Poppins, sans-serif',
+        'roboto': 'Roboto, sans-serif'
       },
       colors: {
         primary: "#5FCCE4",
