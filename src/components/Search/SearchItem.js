@@ -12,10 +12,10 @@ function SearchItem(props) {
         <section className="flex flex-row items-baseline justify-between">
           <h1 className="font-bold text-2xl text-left cursor-pointer hover:underline">{props.name}</h1>
           <div className="flex flex-row">
-          <ImCheckmark size={20} className={"text-green-500 cursor-pointer"} />
-          <FaHammer size={20} className={"text-orange-500 cursor-pointer"}/>
-          <BsFillLightningFill size={20} className={"text-yellow-500 cursor-pointer"}/>
-          <AiFillStar size={20} className={"text-secondary cursor-pointer"}/>
+          {props.completed == 'true' && <ImCheckmark size={20} className={"text-green-500 cursor-pointer"} />}
+          {props.projecting == 'true' && <FaHammer size={20} className={"text-orange-500 cursor-pointer"}/>}
+          {props.flashed == 'true' && <BsFillLightningFill size={20} className={"text-yellow-500 cursor-pointer"}/>}
+          {props.favorite == 'true' && <AiFillStar size={20} className={"text-secondary cursor-pointer"}/>}
 
           </div>
         </section>
