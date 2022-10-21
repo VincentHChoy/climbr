@@ -5,24 +5,55 @@ import SearchItem from "./SearchItem";
 
 const Search = () => {
   const [openMenu, setMenu] = useState(null);
-  const [favorites, setFavorites] = useState(true);
-  const [projecting, setProjecting] = useState(true);
+  const [favorites, setFavorites] = useState(false);
+  const [projecting, setProjecting] = useState(false);
   const [grade, setGrade] = useState([0, 10]);
   const updateGradeRange = (e, data) => {
     setGrade(data);
   };
   const routes = JSON.parse(localStorage.getItem("routes"));
-  const filteredRoutes = routes.map((route) => {
-    return (
-      <SearchItem
-        name={route.routeName}
-        location={route.location}
-        grade={route.difficulty}
-      />
-    );
-  });
+  const filterRoutes = (projecting, favorites, lowGrade, highGrade, search) => {
+    let filteredRoutes = [...routes];
+
+    if (projecting){
+      filteredRoutes = filteredRoutes.filter(
+        (route) => route.projecting == "true"
+      );
+      console.log(filteredRoutes);
+    }
+
+    if (favorites){
+      filteredRoutes = filteredRoutes.filter(
+        (route) => route.favorite == "true"
+      );
+    }
+
+    //convert grade string to number
+    
+    //filter based on grade
+    // filteredRoutes = filteredRoutes.filter(
+    //   (route) => route.difficulty <= highGrade && route.difficulty >= lowGrade
+    // );
+    console.log(filteredRoutes);
+    return filteredRoutes.map((route) => {
+      return (
+        <SearchItem
+          key={route.routeName}
+          name={route.routeName}
+          location={route.location}
+          grade={route.difficulty}
+          flashed={route.flashed}
+          projecting={route.projecting}
+          favorite={route.favorite}
+          completed={route.completed}
+        />
+      );
+    });
+  };
+
   const toggleFavorite = favorites ? "bg-secondary text-white" : "";
   const toggleProjecting = projecting ? "bg-secondary text-white" : "";
+
   return (
     <main className="flex flex-col md:flex-row md:justify-start h-screen w-screen mx-10">
       <aside className="mx-5 md:fixed md:left-5">
@@ -88,7 +119,11 @@ const Search = () => {
       </aside>
       <section className="md:mx-72">
         <h1 className="mx-5 md:mx-0 py-2 font-bold font-roboto">RESULTS</h1>
-        {<ul className="overflow-auto">{filteredRoutes}</ul>}
+        {
+          <ul className="overflow-auto">
+            {filterRoutes(projecting, favorites, grade[0], grade[1],'')}
+          </ul>
+        }
       </section>
     </main>
   );

@@ -1,701 +1,1101 @@
 [
-    {
-        "routeName": "Summer Vacation",
-        "location": "Black Dyke",
-        "difficulty": "V0",
-        "description": "Four star warm up. Climb great jugs from low on the rail up and left, then straight up to top out. Easy, but awkward and off the deck. This is an amazing highball Boulder problem.",
-        "img": "https://cdn2.apstatic.com/photos/climb/107772745_smallMed_1494210518.jpg"
-    },
-    {
-        "routeName": "Stu's Dyke",
-        "location": "Titanic North",
-        "difficulty": "V0",
-        "description": "climb up the dyke feature",
-        "img": "null"
-    },
-    {
-        "routeName": "28th Place",
-        "location": "Survivor",
-        "difficulty": "V0",
-        "description": "Start in the scooped face on an obvious edge matched and feet on a thin edge, fire straight up to a good jug and up and over.",
-        "img": "null"
-    },
-    {
-        "routeName": "Spotters on Strike",
-        "location": "Black Dyke",
-        "difficulty": "V0",
-        "description": "easy highball that gets slightly more thin at the top",
-        "img": "null"
-    },
-    {
-        "routeName": "Dyke Surfer",
-        "location": "Easy Chair",
-        "difficulty": "V0",
-        "description": "Start on an incut dike edge. Traverse left and up on good holds.",
-        "img": "null"
-    },
-    {
-        "routeName": "Super Fly Slab",
-        "location": "Superfly",
-        "difficulty": "V0",
-        "description": "Slabby. Climb the obvious cleaned streak.",
-        "img": "null"
-    },
-    {
-        "routeName": "Fried Ant",
-        "location": "Viper",
-        "difficulty": "V0",
-        "description": "Start low and left on good holds. Move up right to an amazing hold.",
-        "img": "null"
-    },
-    {
-        "routeName": "Squamish Days",
-        "location": "Viper",
-        "difficulty": "V0",
-        "description": "Start on the left side of the jug-covered face with 2 good holds and climb up and left to the arete. A loose hold as been taken out. I believe this may make this problem considerably easier as it as left a large positive hold in its place, anyone familliar with this please comment.",
-        "img": "null"
-    },
-    {
-        "routeName": "Shade Dyke",
-        "location": "Titanic North",
-        "difficulty": "V0+",
-        "description": "Climb up and left on good basalt edges",
-        "img": "null"
-    },
-    {
-        "routeName": "White Bread",
-        "location": "Viper",
-        "difficulty": "V1",
-        "description": "Start pinching the arete on the right with a decent nub for your foot. Move up and left to a large block feature. Mantle, then top out. Pleasant movement.",
-        "img": "null"
-    },
-    {
-        "routeName": "Seam Problem",
-        "location": "Easy Chair",
-        "difficulty": "V1",
-        "description": "start low on blocky horizontal feature, climb up and left through interesting pinches and a jug or two",
-        "img": "null"
-    },
-    {
-        "routeName": "Brotherhood",
-        "location": "Easy Chair",
-        "difficulty": "V1",
-        "description": "Starts on large shelf traverse the lip up and right",
-        "img": "null"
-    },
-    {
-        "routeName": "Twister",
-        "location": "Titanic North",
-        "difficulty": "V1",
-        "description": "Climb the featured dyke left of The Mantis. Start on a big positive dyke hold and up.",
-        "img": "null"
-    },
-    {
-        "routeName": "Any Rock'll Do",
-        "location": "Easy Chair",
-        "difficulty": "V1",
-        "description": "start on low chalked edges traverse up and left",
-        "img": "https://cdn2.apstatic.com/photos/climb/115136448_smallMed_1535389356.jpg"
-    },
-    {
-        "routeName": "Smear Traverse",
-        "location": "Titanic North",
-        "difficulty": "V1",
-        "description": "True to the name. Start from the right end of the lip, and smear traverse your way left, mantling at the other end.",
-        "img": "https://cdn2.apstatic.com/photos/climb/122721502_smallMed_1657556718.jpg"
-    },
-    {
-        "routeName": "Made in the Shade",
-        "location": "Titanic North",
-        "difficulty": "V1",
-        "description": "Start on good edges on right side of the boulder go up through obvious bulge",
-        "img": "null"
-    },
-    {
-        "routeName": "Under the Staircase",
-        "location": "Heartbreak Hotel",
-        "difficulty": "V1",
-        "description": "climb jugs up and right on the corrupted boulder",
-        "img": "null"
-    },
-    {
-        "routeName": "Lowdown",
-        "location": "Thighmaster",
-        "difficulty": "V1",
-        "description": "Start low and right on the sloped rail and work up, mantling. Mantle is secure when you figure it out.",
-        "img": "null"
-    },
-    {
-        "routeName": "Cheese Grater",
-        "location": "Black Dyke",
-        "difficulty": "V1+",
-        "description": "climb slabby dihedral feature ...",
-        "img": "https://cdn2.apstatic.com/photos/climb/110881748_smallMed_1494357339_topo.jpg"
-    },
-    {
-        "routeName": "Left Rib",
-        "location": "Viper",
-        "difficulty": "V2",
-        "description": "Left Rib V2 Left Rib is an excellent problem in a similar style to Cheese Grater, only a little longer, a little harder, and a little better. Start with your left hand on a slanting rail and move up and right to a decent crimp. Slap right for the rib. Move up the rib with good footwork (crux) and some trickery to an easy topout. Alternately climb the rib directly from below at the same grade.",
-        "img": "null"
-    },
-    {
-        "routeName": "Stu's Fly",
-        "location": "Superfly",
-        "difficulty": "V2",
-        "description": "start left of Superfly on low jug climb the arete using fun heel hooks and compression moves",
-        "img": "null"
-    },
-    {
-        "routeName": "Surfin' on Heroin",
-        "location": "Titanic North",
-        "difficulty": "V2",
-        "description": "right hand on crimpy sidepull left on sloper, big moves to good holds on a steep face, rock quality detracts from an otherwise really fun boulder",
-        "img": "null"
-    },
-    {
-        "routeName": "Memory Hotel",
-        "location": "Heartbreak Hotel",
-        "difficulty": "V2",
-        "description": "Start low and left of Heartbreak Hotel Climb up and slightly right to an interesting T/O",
-        "img": "null"
-    },
-    {
-        "routeName": "Heartbreak Hotel",
-        "location": "Heartbreak Hotel",
-        "difficulty": "V2",
-        "description": "Follow the rail right to a hard move or two depending on your reach or lock off strength.",
-        "img": "https://cdn2.apstatic.com/photos/climb/121174113_smallMed_1629325981.jpg"
-    },
-    {
-        "routeName": "Choss-A-Block",
-        "location": "Thighmaster",
-        "difficulty": "V2",
-        "description": "Starting move to crimps is often the crux.",
-        "img": "null"
-    },
-    {
-        "routeName": "Tumbleweed",
-        "location": "Titanic North",
-        "difficulty": "V2",
-        "description": "Crux is the first move (hitting the small crimp with the left hand).",
-        "img": "null"
-    },
-    {
-        "routeName": "Square Cut",
-        "location": "Animal Magnetism",
-        "difficulty": "V2",
-        "description": "Climb starts on large chalked jug a couple feet right of sit down holm boy, goes straight up maybe a pad for protection",
-        "img": "null"
-    },
-    {
-        "routeName": "Big Bottoms",
-        "location": "Titanic North",
-        "difficulty": "V2",
-        "description": "Good to do in Titanic area.",
-        "img": "null"
-    },
-    {
-        "routeName": "Red Face",
-        "location": "Campground s",
-        "difficulty": "V2",
-        "description": "Start seated low and left on the arete, get a pinch out right and then make a long slap for a slopey lip to top out.",
-        "img": "null"
-    },
-    {
-        "routeName": "Slingshot",
-        "location": "Survivor",
-        "difficulty": "V2",
-        "description": "This excellent problem is all about the first few moves. Once you hit the first left hand jug, you should be good to the top as long as you hold it together. With distinct short person and tall person beta, the moves off the crimps can be done a few different ways. Start low with your left hand on the shelf, your right hand on the crimp, your left foot down in the pit, and your right foot on the obvious heel hook. Straight up to the top.",
-        "img": "null"
-    },
-    {
-        "routeName": "Hulkster's Humpfest",
-        "location": "Lip-Smack",
-        "difficulty": "V2",
-        "description": "Hulkster's Humpfest and WWF Action Start standing matched on a good sloping rail. Move up past another good hold to the lip. The unique moves over the lip are what give this problem its name.",
-        "img": "null"
-    },
-    {
-        "routeName": "Largonian Bulge",
-        "location": "Easy Chair",
-        "difficulty": "V2",
-        "description": "start under roof on block like hold fire up to sloper and top out",
-        "img": "null"
-    },
-    {
-        "routeName": "Paperboy",
-        "location": "Lip-Smack",
-        "difficulty": "V2",
-        "description": "Start matched on the right side of the boulder on a good incut edge. Traverse the rail left and up to the lip using some combination of heel hooks and/or horrifically bad feet. The first time I tried this it felt ridiculously hard for V2, and then I tried the heel hook. Aha. A nice problem and deserving of its Top 100 status.",
-        "img": "null"
-    },
-    {
-        "routeName": "Up From the Depths",
-        "location": "Easy Chair",
-        "difficulty": "V2",
-        "description": "Start left on good rail, move up and right climbing \"up from the depths\"",
-        "img": "null"
-    },
-    {
-        "routeName": "Squamish Days Traverse",
-        "location": "Viper",
-        "difficulty": "V2",
-        "description": "Sit Down Start. Start seated using a very low sloping shelf. Pull up to good holds then traverse right to finish.",
-        "img": "https://cdn2.apstatic.com/photos/climb/110708209_smallMed_1494343466_topo.jpg"
-    },
-    {
-        "routeName": "Crack Slabbath",
-        "location": "Lip-Smack",
-        "difficulty": "V2",
-        "description": "Slabby. Climb the nice slab adjacent to the end of the Crackhead log.",
-        "img": "null"
-    },
-    {
-        "routeName": "Speech Therapy",
-        "location": "Easy Chair",
-        "difficulty": "V3",
-        "description": "Start in diagonal crack feature, traverse right through incut edges",
-        "img": "null"
-    },
-    {
-        "routeName": "Titanic",
-        "location": "Titanic North",
-        "difficulty": "V3",
-        "description": "This is by far the shortest problem I have ever done. However, it is extremely fun. Start on two crimper side pulls and make moves up the arete. Really cool problem.",
-        "img": "https://cdn2.apstatic.com/photos/climb/112965325_smallMed_1495855308.jpg"
-    },
-    {
-        "routeName": "21st Century Digital Boy",
-        "difficulty": "V3",
-        "description": "Start matched on the right-most side of the boulder. Big move to a sloper followed by some really fun heel-toe footwork moves you leftwards towards a rail. Final big move takes you to some jugs and a satisfying top out.",
-        "img": "null"
-    },
-    {
-        "routeName": "Double Decker",
-        "location": "Black Dyke",
-        "difficulty": "V3",
-        "description": "Start on the undercling and crimps (establish on boulder, not the small rock below) and throw for the large ledge. Pull for the top with a mantle or high lock-off. Down climb on opposite side.",
-        "img": "null"
-    },
-    {
-        "routeName": "Shade Mantel",
-        "location": "Titanic North",
-        "difficulty": "V3",
-        "description": "Another fun Mantel climb, start left of super cool sloper, traverse right into it and mantel up",
-        "img": "null"
-    },
-    {
-        "routeName": "Crackhead",
-        "location": "Lip-Smack",
-        "difficulty": "V3",
-        "description": "Start as low as you can in the crack, work your way up with toe hooks and underclings, do a big move to gain the right side of the arete and muscle your way up and over.",
-        "img": "null"
-    },
-    {
-        "routeName": "Bert and Ernie were just go…",
-        "location": "Thighmaster",
-        "difficulty": "V3",
-        "description": "Start low and climb the giant flake to the knife edge.",
-        "img": "null"
-    },
-    {
-        "routeName": "Young and Furious",
-        "location": "Viper",
-        "difficulty": "V3",
-        "description": "Essentially a variation of the start of the excellent problem Old and Serious, Young and Furious is a worthy problem in its own right. Start standing on the left side of the boulder using an undercling and bad feet. Make a big move up and right to a good hold. Finish as for Old and Serious.",
-        "img": "null"
-    },
-    {
-        "routeName": "Bo Jo Jones",
-        "location": "Black Dyke",
-        "difficulty": "V3",
-        "description": "A great right to left lip traverse. The Bo Jo Jones boulder Sit start matched on a rail. Traverse right to left using the lip and good holds below the lip. Top out to the left of the tree. Pumpy. Style points deducted for using the tree to top out. Note that a typo in an earlier guidebook showed this as Bojo Jones.",
-        "img": "null"
-    },
-    {
-        "routeName": "American Gigalo",
-        "location": "Viper",
-        "difficulty": "V3",
-        "description": "American Gigalo is one of the coveted Top 100. Start matched on a sloper/pinch and move up to a good rail. A sidepull around the left side leads to a fun top out.",
-        "img": "null"
-    },
-    {
-        "routeName": "Anatomy Lesson",
-        "location": "Viper",
-        "difficulty": "V3",
-        "description": "Sit start with right hand pinching the arete and your left on a sloper. Use some body english to get to the top. Cool problem and perfect rock!",
-        "img": "https://cdn2.apstatic.com/photos/climb/110745947_smallMed_1494352911.jpg"
-    },
-    {
-        "routeName": "Black Dyno",
-        "location": "Thighmaster",
-        "difficulty": "V3",
-        "description": "Start on the Black Mark but move left on crimps and dyno for the top.",
-        "img": "https://cdn2.apstatic.com/photos/climb/110745938_smallMed_1494352910.jpg"
-    },
-    {
-        "routeName": "Couch Surfer",
-        "location": "Titanic North",
-        "difficulty": "V3",
-        "description": "start seated to the right of surfing on heroin, right hand on arete left hand on sloping edge in cave, go up using cool holds on arete",
-        "img": "null"
-    },
-    {
-        "routeName": "Old and Serious",
-        "location": "Viper",
-        "difficulty": "V3",
-        "description": "Sit start using a small rail and move up to a good right hand and then a higher side-pull. Traverse the boulder on good holds to its left arête. High step then make committing moves up the slab to the the top. An outstanding problem that's well deserving of its top 100 status.",
-        "img": "null"
-    },
-    {
-        "routeName": "Centre Slab",
-        "location": "Easy Chair",
-        "difficulty": "V3",
-        "description": "Climb up the center of the slabby face uphill from easy chair. The line is best if you avoid the rail out left part way up and just friction your way to the top. The guide suggests trying this feet only, or by getting a running start.The left face is v1, the right face is v2. All great fun lines.",
-        "img": "null"
-    },
-    {
-        "routeName": "Superdyke",
-        "location": "Easy Chair",
-        "difficulty": "V3+",
-        "description": "Start low on a good jug as for Dyke Surfer V0. Traverse the tenuous dyke up and right behind the tree to a top out on the right side of the boulder. Quite possibly the worlds hardest V3, and one of the coveted Top 100.",
-        "img": "null"
-    },
-    {
-        "routeName": "Superfly Lunge",
-        "location": "Superfly",
-        "difficulty": "V4",
-        "description": "Fun eliminate climb Superfly to good crimp and dyno for the lip",
-        "img": "null"
-    },
-    {
-        "routeName": "Pocket Problem",
-        "location": "Heartbreak Hotel",
-        "difficulty": "V4",
-        "description": "Start on a jug about 6 feet off the ground. Make a big move up the blank wall to a pocket. Grab the lip and traverse right to finish.",
-        "img": "null"
-    },
-    {
-        "routeName": "The Mantis",
-        "location": "Titanic North",
-        "difficulty": "V4",
-        "description": "SDS with a good undercling and slap to positive slopers. Shuffle left along the lip until you are able to mantle.",
-        "img": "https://cdn2.apstatic.com/photos/climb/110881675_smallMed_1494357330.jpg"
-    },
-    {
-        "routeName": "Thighmaster",
-        "location": "Thighmaster",
-        "difficulty": "V4",
-        "description": "Set your feet, squeeze with the legs and make some powerful moves to big holds.",
-        "img": "null"
-    },
-    {
-        "routeName": "Jer's Extension",
-        "location": "Titanic North",
-        "difficulty": "V4",
-        "description": "Start on two well chalked crimps to the right and above the dart to the Mantis. Bust out left with a couple hard moves to slippers and fight the pump as you traverse the lip of the Titanic boulder into the topout for Titanic.",
-        "img": "null"
-    },
-    {
-        "routeName": "Titanic Dyno",
-        "location": "Titanic North",
-        "difficulty": "V4",
-        "description": "Start same as Titanic, but throw for the lip",
-        "img": "https://cdn2.apstatic.com/photos/climb/116356069_smallMed_1547315613.jpg"
-    },
-    {
-        "routeName": "Practical horseman",
-        "location": "Easy Chair",
-        "difficulty": "V4",
-        "description": "Top 100 V4.",
-        "img": "null"
-    },
-    {
-        "routeName": "Superfly",
-        "location": "Superfly",
-        "difficulty": "V4",
-        "description": "Start on the minijug and work your way up and to the right with crimpers and slopers and an excellent finish. This problem is extremely popular and a little polished. Climbing the arete is a different, easier problem.",
-        "img": "null"
-    },
-    {
-        "routeName": "Palminator",
-        "location": "Easy Chair",
-        "difficulty": "V4",
-        "description": "Start as for Easy Chair, make one move right then go up and left to a far crimp. Top out.",
-        "img": "null"
-    },
-    {
-        "routeName": "Sloppy Poppy",
-        "location": "Black Dyke",
-        "difficulty": "V4",
-        "description": "SDS on large shelf. Go straight up on good holds to left hand sloper on the arete. Long move to sloping shelf and topout.",
-        "img": "https://cdn2.apstatic.com/photos/climb/112842639_smallMed_1494318163_topo.jpg"
-    },
-    {
-        "routeName": "Skin Graft",
-        "location": "Black Dyke",
-        "difficulty": "V4",
-        "description": "Stand start with sloping hands and work your way up the arete for a move or three. Eventually move left onto the slab and top out. Super fun.",
-        "img": "null"
-    },
-    {
-        "routeName": "Trad Killer",
-        "location": "Heartbreak Hotel",
-        "difficulty": "V4",
-        "description": "Granite Crimps/side pulls created by the waves on the Granite Face.",
-        "img": "https://cdn2.apstatic.com/photos/climb/115314453_smallMed_1536900213.jpg"
-    },
-    {
-        "routeName": "Easy in an Easy Chair",
-        "location": "Easy Chair",
-        "difficulty": "V4",
-        "description": "Start low and traverse right until it is possible to mantle. Slopes and hooks are abundant here.",
-        "img": "https://cdn2.apstatic.com/photos/climb/107416106_smallMed_1494187640.jpg"
-    },
-    {
-        "routeName": "Black Mark",
-        "location": "Thighmaster",
-        "difficulty": "V4",
-        "description": "Obvious dyke feature. Start seated and trend up and right with poor feet and a big throw at the top.",
-        "img": "https://cdn2.apstatic.com/photos/climb/110745928_smallMed_1494352910.jpg"
-    },
-    {
-        "routeName": "Wafer Thin",
-        "location": "Black Dyke",
-        "difficulty": "V5",
-        "description": "This problem is over with quickly. Crimp your way to better holds and a decent topout. Kinda sharp.",
-        "img": "null"
-    },
-    {
-        "routeName": "The Hoop Wrangler",
-        "location": "The Octagon",
-        "difficulty": "V5",
-        "description": "Start on a large sidepull jug under the overhang. Using heel-hooks and other trickery, work out the roof and finish on the tall slab above.",
-        "img": "null"
-    },
-    {
-        "routeName": "Phat Slab",
-        "location": "Survivor",
-        "difficulty": "V5",
-        "description": "Climb the awesome, Font-like slab. Tread directly up the middle of the face and finish at the highest point of the boulder. Don't veer off to the right.",
-        "img": "null"
-    },
-    {
-        "routeName": "Viper",
-        "location": "Viper",
-        "difficulty": "V5",
-        "description": "Climb the insecure, snakelike fin of rock up the overhinging face. Start with hands on the fin at mid-height and go for it!",
-        "img": "https://cdn2.apstatic.com/photos/climb/106257095_smallMed_1494092060.jpg"
-    },
-    {
-        "routeName": "Swank Stretch",
-        "location": "Easy Chair",
-        "difficulty": "V5",
-        "description": "Start seating on a flat jug. Using the thin slot to work up to better holds and top out",
-        "img": "null"
-    },
-    {
-        "routeName": "Jack's Baby",
-        "location": "Animal Magnetism",
-        "difficulty": "V5",
-        "description": "A classic Squamish sloper problem that begins somewhat awkwardly with a high right-hand and bad foot; a left-hand undercling and heelhook. Traverse right on slopers. The crux is moving your heel as you go.",
-        "img": "null"
-    },
-    {
-        "routeName": "It's About Time",
-        "location": "Titanic South",
-        "difficulty": "V5",
-        "description": "Sit start using a sloping rail/shelf with a right heel or toe hook on the arete. Move right to the arete then up using some combination of monos, heel hooks, and other trickery. It's About Time is a great problem and well deserving of its top 100 status.",
-        "img": "null"
-    },
-    {
-        "routeName": "Timeless",
-        "location": "Titanic South",
-        "difficulty": "V5",
-        "description": "An excellent problem, Timeless was originally graded V4 but is V5 in the current guidebook. Decide for yourself. Start on the left side of the boulder matched on a shelf . Move right to decent holds and up. Its also possible to use sidepull crimps out left and some say the problem is easier this way.",
-        "img": "null"
-    },
-    {
-        "routeName": "Everyday Helmet",
-        "location": "Titanic South",
-        "difficulty": "V5",
-        "description": "Start on Timeless shelf and go straight up, if you look like funky mantel boulder problems this is one not to be missed",
-        "img": "null"
-    },
-    {
-        "routeName": "Slayed by the Pushers",
-        "location": "Easy Chair",
-        "difficulty": "V5",
-        "description": "(this route was renamed by request of the FA in 2020)\nthe finish of green traverse pull up on slopers and climb an interesting mantle",
-        "img": "null"
-    },
-    {
-        "routeName": "Doubt",
-        "location": "Viper",
-        "difficulty": "V5",
-        "description": "The magical forest of the Grand Wall boulders. Doubt V5 is seen in the centre of the photo. Stand start using a great jug. Use a good side pull on the arete to reach a bad right hand crinch. Slap left then go for the rail with some combination of trickery and desperation. This a great problem.",
-        "img": "null"
-    },
-    {
-        "routeName": "Tim's Sloper Problem",
-        "location": "Thighmaster",
-        "difficulty": "V5",
-        "description": "Squat start with two opposing sidepulls (right hand is discrete but locate the good edge below the obvious flat hold) and slap up and right to a large sloping rail, aiming as high as you can reach. Feet up and slap left to another decent sloper again aiming high. With the right hand, bump from a bad sloper to, you guessed it, another sloper. Press to the final slope with high feet and some left hand trickery. Top 100 in Bourdon's guidebook. A must do.",
-        "img": "null"
-    },
-    {
-        "routeName": "Gastonomical",
-        "location": "Thighmaster",
-        "difficulty": "V5",
-        "description": "Start on a good sidepull under the leaning tree and move out right to a decent rail. Heading up is finicky, but trust the feet and grunt to the last pocket!",
-        "img": "null"
-    },
-    {
-        "routeName": "Portable",
-        "location": "Superfly",
-        "difficulty": "V5-6",
-        "description": "Pinch and lift the boulder. Easier if you have big hands.\nV10 if you go up the V0 \"Superfly Slab\" with no hands while lifting Portable.\nV4 if you mantle it. Pretty easy, like doing a dip if you have feet off and \"campus\" it. Quite hard, and worthy of the V4 grade if you can do the mantle starting with both feet on the rock. Make sure it's sitting level!",
-        "img": "null"
-    },
-    {
-        "routeName": "Minor Threat",
-        "location": "Easy Chair",
-        "difficulty": "V6",
-        "description": "starts in undercling feature on the right side of blunt arete, climb up and left.",
-        "img": "null"
-    },
-    {
-        "routeName": "Super Daddy Long Limbs",
-        "location": "Black Dyke",
-        "difficulty": "V6",
-        "description": "Starts on the sloper shelf to the right of the Sloppy Poppy start, utilize cool holds in the hueco, and be prepared for a pretty engaging top out(traverse right on slopers or go straight up for bonus points)",
-        "img": "https://cdn2.apstatic.com/photos/climb/123034766_smallMed_1662828992.jpg"
-    },
-    {
-        "routeName": "Lounge Act",
-        "location": "Easy Chair",
-        "difficulty": "V6",
-        "description": "Start in the middle of the face with bad crimps and huge feet. Work your way up tiny holds to the juggy lip. Exciting mantle.",
-        "img": "null"
-    },
-    {
-        "routeName": "Sit down to Holm Boy",
-        "location": "Animal Magnetism",
-        "difficulty": "V6",
-        "description": "Start sitting with good right flake. Throw up to sloper rail trendng left. Figure out which holds work for you. Top out on good holds.",
-        "img": "null"
-    },
-    {
-        "routeName": "Sea of Doubt",
-        "location": "Titanic North",
-        "difficulty": "V6",
-        "description": "Start standing with left hand crystal slimper and right hand gaston. Climb the narrow dihedral and top out directly above.\nGuidebook lists this as V6 but I thought it felt easier",
-        "img": "null"
-    },
-    {
-        "routeName": "Golden Bowl",
-        "location": "Mantel Madness",
-        "difficulty": "V7-",
-        "description": "short but fun, start seated pinching left hand arete right hand on incut side pull crimp, utilize the arete and find your way to the lip of the boulder. With good beta may feel easier",
-        "img": "null"
-    },
-    {
-        "routeName": "Baba Hari Dass",
-        "location": "Superfly",
-        "difficulty": "V7",
-        "description": "Sit down start, make a few sloper moves to a good hold, set your heel, wrestle with some slimpers and eventually find \"the good one\" out left. The holds up and above the lip are better but still require your attention.Food for thought: \"Growing up in laid-back Santa Cruz, California, he inherited a mystical bent from his parents, Gita and Bob, who were students of Baba Hari Dass, a yogi who took a vow of silence in 1952 and who still communicates by writing on a chalkboard that hangs on a string around his neck. The yogi married Sharma's parents in a Hindu ceremony, and he gave them their last name.\" (mensjournal.com/magazine/ch…)",
-        "img": "null"
-    },
-    {
-        "routeName": "The Airtight Garage",
-        "location": "Thighmaster",
-        "difficulty": "V7",
-        "description": "Start standing matched on the big sidepull, work the feet, move up with the right hand to slopers, crimps, and top out.\nMay feel soft if you are very flexible or stack many pads.",
-        "img": "null"
-    },
-    {
-        "routeName": "ATD",
-        "location": "Mantel Madness",
-        "difficulty": "V7",
-        "description": "Classic lip traverse behind the cacodemon boulder.",
-        "img": "null"
-    },
-    {
-        "routeName": "The Fuzz",
-        "location": "Campground s",
-        "difficulty": "V7",
-        "description": "start on incut side pull and horizontal rail(the huge chalked up foot hold is the start to a different climb but feel free to chunk a foot behind it). climb up through a variety of neat holds, finish with a big lock off of a perfect pinch",
-        "img": "null"
-    },
-    {
-        "routeName": "Golden Boy",
-        "location": "Animal Magnetism",
-        "difficulty": "V7",
-        "description": "Start down low on flat ledges (same start hold as The Proposal) and work your way up and left through fun dynamic moves. A solid heelhook and some lateral momentum will get you out to the end of the problem. Don't discount the mantle though-- it's not quite as straightforward as it looks.",
-        "img": "null"
-    },
-    {
-        "routeName": "Anubis",
-        "location": "Titanic North",
-        "difficulty": "V7",
-        "description": "A powerful 2-move problem. Summon up all the body tension that you can, get your heelhooking muscles warmed up, and launch yourself out of the roof. It's short, but with fun moves and great rock it's a classic.",
-        "img": "null"
-    },
-    {
-        "routeName": "Mr. Bigglesworth",
-        "location": "Titanic North",
-        "difficulty": "V8-",
-        "description": "Pull on from the boulder underneath this problem with a left hand on a rail and a right hand on the arete. Slap up the arete and top out on slopers.",
-        "img": "null"
-    },
-    {
-        "routeName": "The Rookie",
-        "location": "The Octagon",
-        "difficulty": "V8",
-        "description": "Jump Start to slopers at two meters up. Climb the crimps straight upwards into a committing top out.",
-        "img": "https://cdn2.apstatic.com/photos/climb/123030503_smallMed_1662748389.jpg"
-    },
-    {
-        "routeName": "Mantra",
-        "location": "Titanic North",
-        "difficulty": "V8",
-        "description": "start on obvious jug on arete, climb up fun moves to a difficult big move up and left",
-        "img": "https://cdn2.apstatic.com/photos/climb/121203720_smallMed_1629868600_topo.jpg"
-    },
-    {
-        "routeName": "The Weasel",
-        "location": "Mantel Madness",
-        "difficulty": "V8+",
-        "description": "Finicky heel hooks, horrible slopers, desperate arete slapping, physics defying hamhocks and a heartbreaking finish.",
-        "img": "https://cdn2.apstatic.com/photos/climb/107399206_smallMed_1494186459.jpg"
-    },
-    {
-        "routeName": "Wormworld Cave",
-        "location": "Heartbreak Hotel",
-        "difficulty": "V9-",
-        "description": "A Squamish classic. Start down in the cave on the two head-level holds, and make a low-percentage deadpoint to a decent edge. From there, work up the arete and prepare for the backwards throw to get into the topout sequence. This is a must-do for the grade.",
-        "img": "null"
-    },
-    {
-        "routeName": "No Troublems",
-        "location": "Animal Magnetism",
-        "difficulty": "V10",
-        "description": "Begin matched on an obvious low rail seated directly in front of the prow. Move out the roof trending left to a great jug at the lip. Shake out and keep it together up the slab. I avoid the crack entirely on the top-out, it doesn't seem appropriate.",
-        "img": "null"
-    },
-    {
-        "routeName": "Zero Zero",
-        "location": "Black Dyke",
-        "difficulty": "V10",
-        "description": "SDS--Right hand low on side pull and left hand high on crimper. Climb on small holds along a seam.",
-        "img": "https://cdn2.apstatic.com/photos/climb/105857258_smallMed_1557864324.jpg"
-    },
-    {
-        "routeName": "Wormworld Cave sit-start",
-        "location": "Heartbreak Hotel",
-        "difficulty": "V10",
-        "description": "This sit start adds a few more difficult moves to the opening sequence of the Wormworld Cave problem. Start as low as possible on the right side of the cave and make some tenuous and difficult moves up the arete until you can break left into the opening deadpoint on the original Cave problem.",
-        "img": "null"
-    }
+  {
+    "routeName": "Summer Vacation",
+    "location": "Black Dyke",
+    "difficulty": "V0",
+    "description": "Four star warm up. Climb great jugs from low on the rail up and left, then straight up to top out. Easy, but awkward and off the deck. This is an amazing highball Boulder problem.",
+    "img": "https://cdn2.apstatic.com/photos/climb/107772745_smallMed_1494210518.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "true",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Stu's Dyke",
+    "location": "Titanic North",
+    "difficulty": "V0",
+    "description": "climb up the dyke feature",
+    "img": "null",
+    "flashed": "false",
+    "completed": "true",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "28th Place",
+    "location": "Survivor",
+    "difficulty": "V0",
+    "description": "Start in the scooped face on an obvious edge matched and feet on a thin edge, fire straight up to a good jug and up and over.",
+    "img": "null",
+    "flashed": "true",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Spotters on Strike",
+    "location": "Black Dyke",
+    "difficulty": "V0",
+    "description": "easy highball that gets slightly more thin at the top",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "true"
+  },
+  {
+    "routeName": "Dyke Surfer",
+    "location": "Easy Chair",
+    "difficulty": "V0",
+    "description": "Start on an incut dike edge. Traverse left and up on good holds.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Super Fly Slab",
+    "location": "Superfly",
+    "difficulty": "V0",
+    "description": "Slabby. Climb the obvious cleaned streak.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Fried Ant",
+    "location": "Viper",
+    "difficulty": "V0",
+    "description": "Start low and left on good holds. Move up right to an amazing hold.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Squamish Days",
+    "location": "Viper",
+    "difficulty": "V0",
+    "description": "Start on the left side of the jug-covered face with 2 good holds and climb up and left to the arete. A loose hold as been taken out. I believe this may make this problem considerably easier as it as left a large positive hold in its place, anyone familliar with this please comment.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Shade Dyke",
+    "location": "Titanic North",
+    "difficulty": "V0+",
+    "description": "Climb up and left on good basalt edges",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "White Bread",
+    "location": "Viper",
+    "difficulty": "V1",
+    "description": "Start pinching the arete on the right with a decent nub for your foot. Move up and left to a large block feature. Mantle, then top out. Pleasant movement.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Seam Problem",
+    "location": "Easy Chair",
+    "difficulty": "V1",
+    "description": "start low on blocky horizontal feature, climb up and left through interesting pinches and a jug or two",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Brotherhood",
+    "location": "Easy Chair",
+    "difficulty": "V1",
+    "description": "Starts on large shelf traverse the lip up and right",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Twister",
+    "location": "Titanic North",
+    "difficulty": "V1",
+    "description": "Climb the featured dyke left of The Mantis. Start on a big positive dyke hold and up.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Any Rock'll Do",
+    "location": "Easy Chair",
+    "difficulty": "V1",
+    "description": "start on low chalked edges traverse up and left",
+    "img": "https://cdn2.apstatic.com/photos/climb/115136448_smallMed_1535389356.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Smear Traverse",
+    "location": "Titanic North",
+    "difficulty": "V1",
+    "description": "True to the name. Start from the right end of the lip, and smear traverse your way left, mantling at the other end.",
+    "img": "https://cdn2.apstatic.com/photos/climb/122721502_smallMed_1657556718.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Made in the Shade",
+    "location": "Titanic North",
+    "difficulty": "V1",
+    "description": "Start on good edges on right side of the boulder go up through obvious bulge",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Under the Staircase",
+    "location": "Heartbreak Hotel",
+    "difficulty": "V1",
+    "description": "climb jugs up and right on the corrupted boulder",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Lowdown",
+    "location": "Thighmaster",
+    "difficulty": "V1",
+    "description": "Start low and right on the sloped rail and work up, mantling. Mantle is secure when you figure it out.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Cheese Grater",
+    "location": "Black Dyke",
+    "difficulty": "V1+",
+    "description": "climb slabby dihedral feature ...",
+    "img": "https://cdn2.apstatic.com/photos/climb/110881748_smallMed_1494357339_topo.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Left Rib",
+    "location": "Viper",
+    "difficulty": "V2",
+    "description": "Left Rib V2 Left Rib is an excellent problem in a similar style to Cheese Grater, only a little longer, a little harder, and a little better. Start with your left hand on a slanting rail and move up and right to a decent crimp. Slap right for the rib. Move up the rib with good footwork (crux) and some trickery to an easy topout. Alternately climb the rib directly from below at the same grade.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Stu's Fly",
+    "location": "Superfly",
+    "difficulty": "V2",
+    "description": "start left of Superfly on low jug climb the arete using fun heel hooks and compression moves",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Surfin' on Heroin",
+    "location": "Titanic North",
+    "difficulty": "V2",
+    "description": "right hand on crimpy sidepull left on sloper, big moves to good holds on a steep face, rock quality detracts from an otherwise really fun boulder",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Memory Hotel",
+    "location": "Heartbreak Hotel",
+    "difficulty": "V2",
+    "description": "Start low and left of Heartbreak Hotel Climb up and slightly right to an interesting T/O",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Heartbreak Hotel",
+    "location": "Heartbreak Hotel",
+    "difficulty": "V2",
+    "description": "Follow the rail right to a hard move or two depending on your reach or lock off strength.",
+    "img": "https://cdn2.apstatic.com/photos/climb/121174113_smallMed_1629325981.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Choss-A-Block",
+    "location": "Thighmaster",
+    "difficulty": "V2",
+    "description": "Starting move to crimps is often the crux.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Tumbleweed",
+    "location": "Titanic North",
+    "difficulty": "V2",
+    "description": "Crux is the first move (hitting the small crimp with the left hand).",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Square Cut",
+    "location": "Animal Magnetism",
+    "difficulty": "V2",
+    "description": "Climb starts on large chalked jug a couple feet right of sit down holm boy, goes straight up maybe a pad for protection",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Big Bottoms",
+    "location": "Titanic North",
+    "difficulty": "V2",
+    "description": "Good to do in Titanic area.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Red Face",
+    "location": "Campground s",
+    "difficulty": "V2",
+    "description": "Start seated low and left on the arete, get a pinch out right and then make a long slap for a slopey lip to top out.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Slingshot",
+    "location": "Survivor",
+    "difficulty": "V2",
+    "description": "This excellent problem is all about the first few moves. Once you hit the first left hand jug, you should be good to the top as long as you hold it together. With distinct short person and tall person beta, the moves off the crimps can be done a few different ways. Start low with your left hand on the shelf, your right hand on the crimp, your left foot down in the pit, and your right foot on the obvious heel hook. Straight up to the top.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Hulkster's Humpfest",
+    "location": "Lip-Smack",
+    "difficulty": "V2",
+    "description": "Hulkster's Humpfest and WWF Action Start standing matched on a good sloping rail. Move up past another good hold to the lip. The unique moves over the lip are what give this problem its name.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Largonian Bulge",
+    "location": "Easy Chair",
+    "difficulty": "V2",
+    "description": "start under roof on block like hold fire up to sloper and top out",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Paperboy",
+    "location": "Lip-Smack",
+    "difficulty": "V2",
+    "description": "Start matched on the right side of the boulder on a good incut edge. Traverse the rail left and up to the lip using some combination of heel hooks and/or horrifically bad feet. The first time I tried this it felt ridiculously hard for V2, and then I tried the heel hook. Aha. A nice problem and deserving of its Top 100 status.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Up From the Depths",
+    "location": "Easy Chair",
+    "difficulty": "V2",
+    "description": "Start left on good rail, move up and right climbing \"up from the depths\"",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Squamish Days Traverse",
+    "location": "Viper",
+    "difficulty": "V2",
+    "description": "Sit Down Start. Start seated using a very low sloping shelf. Pull up to good holds then traverse right to finish.",
+    "img": "https://cdn2.apstatic.com/photos/climb/110708209_smallMed_1494343466_topo.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Crack Slabbath",
+    "location": "Lip-Smack",
+    "difficulty": "V2",
+    "description": "Slabby. Climb the nice slab adjacent to the end of the Crackhead log.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Speech Therapy",
+    "location": "Easy Chair",
+    "difficulty": "V3",
+    "description": "Start in diagonal crack feature, traverse right through incut edges",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Titanic",
+    "location": "Titanic North",
+    "difficulty": "V3",
+    "description": "This is by far the shortest problem I have ever done. However, it is extremely fun. Start on two crimper side pulls and make moves up the arete. Really cool problem.",
+    "img": "https://cdn2.apstatic.com/photos/climb/112965325_smallMed_1495855308.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "21st Century Digital Boy",
+    "difficulty": "V3",
+    "description": "Start matched on the right-most side of the boulder. Big move to a sloper followed by some really fun heel-toe footwork moves you leftwards towards a rail. Final big move takes you to some jugs and a satisfying top out.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Double Decker",
+    "location": "Black Dyke",
+    "difficulty": "V3",
+    "description": "Start on the undercling and crimps (establish on boulder, not the small rock below) and throw for the large ledge. Pull for the top with a mantle or high lock-off. Down climb on opposite side.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Shade Mantel",
+    "location": "Titanic North",
+    "difficulty": "V3",
+    "description": "Another fun Mantel climb, start left of super cool sloper, traverse right into it and mantel up",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Crackhead",
+    "location": "Lip-Smack",
+    "difficulty": "V3",
+    "description": "Start as low as you can in the crack, work your way up with toe hooks and underclings, do a big move to gain the right side of the arete and muscle your way up and over.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Bert and Ernie were just go…",
+    "location": "Thighmaster",
+    "difficulty": "V3",
+    "description": "Start low and climb the giant flake to the knife edge.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Young and Furious",
+    "location": "Viper",
+    "difficulty": "V3",
+    "description": "Essentially a variation of the start of the excellent problem Old and Serious, Young and Furious is a worthy problem in its own right. Start standing on the left side of the boulder using an undercling and bad feet. Make a big move up and right to a good hold. Finish as for Old and Serious.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Bo Jo Jones",
+    "location": "Black Dyke",
+    "difficulty": "V3",
+    "description": "A great right to left lip traverse. The Bo Jo Jones boulder Sit start matched on a rail. Traverse right to left using the lip and good holds below the lip. Top out to the left of the tree. Pumpy. Style points deducted for using the tree to top out. Note that a typo in an earlier guidebook showed this as Bojo Jones.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "American Gigalo",
+    "location": "Viper",
+    "difficulty": "V3",
+    "description": "American Gigalo is one of the coveted Top 100. Start matched on a sloper/pinch and move up to a good rail. A sidepull around the left side leads to a fun top out.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Anatomy Lesson",
+    "location": "Viper",
+    "difficulty": "V3",
+    "description": "Sit start with right hand pinching the arete and your left on a sloper. Use some body english to get to the top. Cool problem and perfect rock!",
+    "img": "https://cdn2.apstatic.com/photos/climb/110745947_smallMed_1494352911.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Black Dyno",
+    "location": "Thighmaster",
+    "difficulty": "V3",
+    "description": "Start on the Black Mark but move left on crimps and dyno for the top.",
+    "img": "https://cdn2.apstatic.com/photos/climb/110745938_smallMed_1494352910.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Couch Surfer",
+    "location": "Titanic North",
+    "difficulty": "V3",
+    "description": "start seated to the right of surfing on heroin, right hand on arete left hand on sloping edge in cave, go up using cool holds on arete",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Old and Serious",
+    "location": "Viper",
+    "difficulty": "V3",
+    "description": "Sit start using a small rail and move up to a good right hand and then a higher side-pull. Traverse the boulder on good holds to its left arête. High step then make committing moves up the slab to the the top. An outstanding problem that's well deserving of its top 100 status.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Centre Slab",
+    "location": "Easy Chair",
+    "difficulty": "V3",
+    "description": "Climb up the center of the slabby face uphill from easy chair. The line is best if you avoid the rail out left part way up and just friction your way to the top. The guide suggests trying this feet only, or by getting a running start.The left face is v1, the right face is v2. All great fun lines.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Superdyke",
+    "location": "Easy Chair",
+    "difficulty": "V3+",
+    "description": "Start low on a good jug as for Dyke Surfer V0. Traverse the tenuous dyke up and right behind the tree to a top out on the right side of the boulder. Quite possibly the worlds hardest V3, and one of the coveted Top 100.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Superfly Lunge",
+    "location": "Superfly",
+    "difficulty": "V4",
+    "description": "Fun eliminate climb Superfly to good crimp and dyno for the lip",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Pocket Problem",
+    "location": "Heartbreak Hotel",
+    "difficulty": "V4",
+    "description": "Start on a jug about 6 feet off the ground. Make a big move up the blank wall to a pocket. Grab the lip and traverse right to finish.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "The Mantis",
+    "location": "Titanic North",
+    "difficulty": "V4",
+    "description": "SDS with a good undercling and slap to positive slopers. Shuffle left along the lip until you are able to mantle.",
+    "img": "https://cdn2.apstatic.com/photos/climb/110881675_smallMed_1494357330.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Thighmaster",
+    "location": "Thighmaster",
+    "difficulty": "V4",
+    "description": "Set your feet, squeeze with the legs and make some powerful moves to big holds.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Jer's Extension",
+    "location": "Titanic North",
+    "difficulty": "V4",
+    "description": "Start on two well chalked crimps to the right and above the dart to the Mantis. Bust out left with a couple hard moves to slippers and fight the pump as you traverse the lip of the Titanic boulder into the topout for Titanic.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Titanic Dyno",
+    "location": "Titanic North",
+    "difficulty": "V4",
+    "description": "Start same as Titanic, but throw for the lip",
+    "img": "https://cdn2.apstatic.com/photos/climb/116356069_smallMed_1547315613.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Practical horseman",
+    "location": "Easy Chair",
+    "difficulty": "V4",
+    "description": "Top 100 V4.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Superfly",
+    "location": "Superfly",
+    "difficulty": "V4",
+    "description": "Start on the minijug and work your way up and to the right with crimpers and slopers and an excellent finish. This problem is extremely popular and a little polished. Climbing the arete is a different, easier problem.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Palminator",
+    "location": "Easy Chair",
+    "difficulty": "V4",
+    "description": "Start as for Easy Chair, make one move right then go up and left to a far crimp. Top out.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Sloppy Poppy",
+    "location": "Black Dyke",
+    "difficulty": "V4",
+    "description": "SDS on large shelf. Go straight up on good holds to left hand sloper on the arete. Long move to sloping shelf and topout.",
+    "img": "https://cdn2.apstatic.com/photos/climb/112842639_smallMed_1494318163_topo.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Skin Graft",
+    "location": "Black Dyke",
+    "difficulty": "V4",
+    "description": "Stand start with sloping hands and work your way up the arete for a move or three. Eventually move left onto the slab and top out. Super fun.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Trad Killer",
+    "location": "Heartbreak Hotel",
+    "difficulty": "V4",
+    "description": "Granite Crimps/side pulls created by the waves on the Granite Face.",
+    "img": "https://cdn2.apstatic.com/photos/climb/115314453_smallMed_1536900213.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Easy in an Easy Chair",
+    "location": "Easy Chair",
+    "difficulty": "V4",
+    "description": "Start low and traverse right until it is possible to mantle. Slopes and hooks are abundant here.",
+    "img": "https://cdn2.apstatic.com/photos/climb/107416106_smallMed_1494187640.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Black Mark",
+    "location": "Thighmaster",
+    "difficulty": "V4",
+    "description": "Obvious dyke feature. Start seated and trend up and right with poor feet and a big throw at the top.",
+    "img": "https://cdn2.apstatic.com/photos/climb/110745928_smallMed_1494352910.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Wafer Thin",
+    "location": "Black Dyke",
+    "difficulty": "V5",
+    "description": "This problem is over with quickly. Crimp your way to better holds and a decent topout. Kinda sharp.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "The Hoop Wrangler",
+    "location": "The Octagon",
+    "difficulty": "V5",
+    "description": "Start on a large sidepull jug under the overhang. Using heel-hooks and other trickery, work out the roof and finish on the tall slab above.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Phat Slab",
+    "location": "Survivor",
+    "difficulty": "V5",
+    "description": "Climb the awesome, Font-like slab. Tread directly up the middle of the face and finish at the highest point of the boulder. Don't veer off to the right.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Viper",
+    "location": "Viper",
+    "difficulty": "V5",
+    "description": "Climb the insecure, snakelike fin of rock up the overhinging face. Start with hands on the fin at mid-height and go for it!",
+    "img": "https://cdn2.apstatic.com/photos/climb/106257095_smallMed_1494092060.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Swank Stretch",
+    "location": "Easy Chair",
+    "difficulty": "V5",
+    "description": "Start seating on a flat jug. Using the thin slot to work up to better holds and top out",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Jack's Baby",
+    "location": "Animal Magnetism",
+    "difficulty": "V5",
+    "description": "A classic Squamish sloper problem that begins somewhat awkwardly with a high right-hand and bad foot; a left-hand undercling and heelhook. Traverse right on slopers. The crux is moving your heel as you go.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "It's About Time",
+    "location": "Titanic South",
+    "difficulty": "V5",
+    "description": "Sit start using a sloping rail/shelf with a right heel or toe hook on the arete. Move right to the arete then up using some combination of monos, heel hooks, and other trickery. It's About Time is a great problem and well deserving of its top 100 status.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Timeless",
+    "location": "Titanic South",
+    "difficulty": "V5",
+    "description": "An excellent problem, Timeless was originally graded V4 but is V5 in the current guidebook. Decide for yourself. Start on the left side of the boulder matched on a shelf . Move right to decent holds and up. Its also possible to use sidepull crimps out left and some say the problem is easier this way.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Everyday Helmet",
+    "location": "Titanic South",
+    "difficulty": "V5",
+    "description": "Start on Timeless shelf and go straight up, if you look like funky mantel boulder problems this is one not to be missed",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Slayed by the Pushers",
+    "location": "Easy Chair",
+    "difficulty": "V5",
+    "description": "(this route was renamed by request of the FA in 2020)\nthe finish of green traverse pull up on slopers and climb an interesting mantle",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Doubt",
+    "location": "Viper",
+    "difficulty": "V5",
+    "description": "The magical forest of the Grand Wall boulders. Doubt V5 is seen in the centre of the photo. Stand start using a great jug. Use a good side pull on the arete to reach a bad right hand crinch. Slap left then go for the rail with some combination of trickery and desperation. This a great problem.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Tim's Sloper Problem",
+    "location": "Thighmaster",
+    "difficulty": "V5",
+    "description": "Squat start with two opposing sidepulls (right hand is discrete but locate the good edge below the obvious flat hold) and slap up and right to a large sloping rail, aiming as high as you can reach. Feet up and slap left to another decent sloper again aiming high. With the right hand, bump from a bad sloper to, you guessed it, another sloper. Press to the final slope with high feet and some left hand trickery. Top 100 in Bourdon's guidebook. A must do.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Gastonomical",
+    "location": "Thighmaster",
+    "difficulty": "V5",
+    "description": "Start on a good sidepull under the leaning tree and move out right to a decent rail. Heading up is finicky, but trust the feet and grunt to the last pocket!",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Portable",
+    "location": "Superfly",
+    "difficulty": "V5-6",
+    "description": "Pinch and lift the boulder. Easier if you have big hands.\nV10 if you go up the V0 \"Superfly Slab\" with no hands while lifting Portable.\nV4 if you mantle it. Pretty easy, like doing a dip if you have feet off and \"campus\" it. Quite hard, and worthy of the V4 grade if you can do the mantle starting with both feet on the rock. Make sure it's sitting level!",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Minor Threat",
+    "location": "Easy Chair",
+    "difficulty": "V6",
+    "description": "starts in undercling feature on the right side of blunt arete, climb up and left.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Super Daddy Long Limbs",
+    "location": "Black Dyke",
+    "difficulty": "V6",
+    "description": "Starts on the sloper shelf to the right of the Sloppy Poppy start, utilize cool holds in the hueco, and be prepared for a pretty engaging top out(traverse right on slopers or go straight up for bonus points)",
+    "img": "https://cdn2.apstatic.com/photos/climb/123034766_smallMed_1662828992.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Lounge Act",
+    "location": "Easy Chair",
+    "difficulty": "V6",
+    "description": "Start in the middle of the face with bad crimps and huge feet. Work your way up tiny holds to the juggy lip. Exciting mantle.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Sit down to Holm Boy",
+    "location": "Animal Magnetism",
+    "difficulty": "V6",
+    "description": "Start sitting with good right flake. Throw up to sloper rail trendng left. Figure out which holds work for you. Top out on good holds.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Sea of Doubt",
+    "location": "Titanic North",
+    "difficulty": "V6",
+    "description": "Start standing with left hand crystal slimper and right hand gaston. Climb the narrow dihedral and top out directly above.\nGuidebook lists this as V6 but I thought it felt easier",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Golden Bowl",
+    "location": "Mantel Madness",
+    "difficulty": "V7-",
+    "description": "short but fun, start seated pinching left hand arete right hand on incut side pull crimp, utilize the arete and find your way to the lip of the boulder. With good beta may feel easier",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Baba Hari Dass",
+    "location": "Superfly",
+    "difficulty": "V7",
+    "description": "Sit down start, make a few sloper moves to a good hold, set your heel, wrestle with some slimpers and eventually find \"the good one\" out left. The holds up and above the lip are better but still require your attention.Food for thought: \"Growing up in laid-back Santa Cruz, California, he inherited a mystical bent from his parents, Gita and Bob, who were students of Baba Hari Dass, a yogi who took a vow of silence in 1952 and who still communicates by writing on a chalkboard that hangs on a string around his neck. The yogi married Sharma's parents in a Hindu ceremony, and he gave them their last name.\" (mensjournal.com/magazine/ch…)",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "The Airtight Garage",
+    "location": "Thighmaster",
+    "difficulty": "V7",
+    "description": "Start standing matched on the big sidepull, work the feet, move up with the right hand to slopers, crimps, and top out.\nMay feel soft if you are very flexible or stack many pads.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "ATD",
+    "location": "Mantel Madness",
+    "difficulty": "V7",
+    "description": "Classic lip traverse behind the cacodemon boulder.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "The Fuzz",
+    "location": "Campground s",
+    "difficulty": "V7",
+    "description": "start on incut side pull and horizontal rail(the huge chalked up foot hold is the start to a different climb but feel free to chunk a foot behind it). climb up through a variety of neat holds, finish with a big lock off of a perfect pinch",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Golden Boy",
+    "location": "Animal Magnetism",
+    "difficulty": "V7",
+    "description": "Start down low on flat ledges (same start hold as The Proposal) and work your way up and left through fun dynamic moves. A solid heelhook and some lateral momentum will get you out to the end of the problem. Don't discount the mantle though-- it's not quite as straightforward as it looks.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Anubis",
+    "location": "Titanic North",
+    "difficulty": "V7",
+    "description": "A powerful 2-move problem. Summon up all the body tension that you can, get your heelhooking muscles warmed up, and launch yourself out of the roof. It's short, but with fun moves and great rock it's a classic.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Mr. Bigglesworth",
+    "location": "Titanic North",
+    "difficulty": "V8-",
+    "description": "Pull on from the boulder underneath this problem with a left hand on a rail and a right hand on the arete. Slap up the arete and top out on slopers.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "The Rookie",
+    "location": "The Octagon",
+    "difficulty": "V8",
+    "description": "Jump Start to slopers at two meters up. Climb the crimps straight upwards into a committing top out.",
+    "img": "https://cdn2.apstatic.com/photos/climb/123030503_smallMed_1662748389.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Mantra",
+    "location": "Titanic North",
+    "difficulty": "V8",
+    "description": "start on obvious jug on arete, climb up fun moves to a difficult big move up and left",
+    "img": "https://cdn2.apstatic.com/photos/climb/121203720_smallMed_1629868600_topo.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "The Weasel",
+    "location": "Mantel Madness",
+    "difficulty": "V8+",
+    "description": "Finicky heel hooks, horrible slopers, desperate arete slapping, physics defying hamhocks and a heartbreaking finish.",
+    "img": "https://cdn2.apstatic.com/photos/climb/107399206_smallMed_1494186459.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Wormworld Cave",
+    "location": "Heartbreak Hotel",
+    "difficulty": "V9-",
+    "description": "A Squamish classic. Start down in the cave on the two head-level holds, and make a low-percentage deadpoint to a decent edge. From there, work up the arete and prepare for the backwards throw to get into the topout sequence. This is a must-do for the grade.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "No Troublems",
+    "location": "Animal Magnetism",
+    "difficulty": "V10",
+    "description": "Begin matched on an obvious low rail seated directly in front of the prow. Move out the roof trending left to a great jug at the lip. Shake out and keep it together up the slab. I avoid the crack entirely on the top-out, it doesn't seem appropriate.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Zero Zero",
+    "location": "Black Dyke",
+    "difficulty": "V10",
+    "description": "SDS--Right hand low on side pull and left hand high on crimper. Climb on small holds along a seam.",
+    "img": "https://cdn2.apstatic.com/photos/climb/105857258_smallMed_1557864324.jpg",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  },
+  {
+    "routeName": "Wormworld Cave sit-start",
+    "location": "Heartbreak Hotel",
+    "difficulty": "V10",
+    "description": "This sit start adds a few more difficult moves to the opening sequence of the Wormworld Cave problem. Start as low as possible on the right side of the cave and make some tenuous and difficult moves up the arete until you can break left into the opening deadpoint on the original Cave problem.",
+    "img": "null",
+    "flashed": "false",
+    "completed": "false",
+    "projecting": "false",
+    "favorite": "false"
+  }
 ]
