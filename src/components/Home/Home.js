@@ -3,19 +3,17 @@ import List from "./List";
 import { FaHammer } from "react-icons/fa";
 import { BsFillLightningFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
-import ListItem from "./ListItem";
-import { type } from "@testing-library/user-event/dist/type";
 
 function Home() {
-  const [routes,setRoutes] = useState([])
-  const [user, setUser] = useState([])
+  const [routes, setRoutes] = useState([]);
+  const [user, setUser] = useState([]);
   const dummyUserData = {
     name: "Lucy",
     img: "https://styles.redditmedia.com/t5_2spc8g/styles/communityIcon_5aa9ayflu3p91.png",
     title: "net-runner",
   };
 
-  const getRoutes = () => {
+  const setRoutesData = () => {
     fetch("routes.json", {
       headers: {
         "Content-Type": "application/json",
@@ -26,12 +24,12 @@ function Home() {
         return response.json();
       })
       .then((myJson) => {
-        setRoutes(myJson)
+        setRoutes(myJson);
         localStorage.setItem("routes", JSON.stringify(myJson));
       });
   };
 
-  const getUser = () => {
+  const setUserData = () => {
     fetch("user.json", {
       headers: {
         "Content-Type": "application/json",
@@ -42,19 +40,18 @@ function Home() {
         return response.json();
       })
       .then((myJson) => {
-        setUser(myJson)
+        setUser(myJson);
         localStorage.setItem("user", JSON.stringify(myJson));
       });
   };
 
   useEffect(() => {
-    getRoutes();
-    getUser();
+    setRoutesData();
+    setUserData();
   }, []);
 
-  const userData = JSON.parse(localStorage.user)
+  const userData = JSON.parse(localStorage.user);
   console.log(userData.projects);
-
 
   return (
     <div className="h-screen">
