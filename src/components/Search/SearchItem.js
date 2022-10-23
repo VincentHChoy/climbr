@@ -4,20 +4,17 @@ import { BsFillLightningFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
 import { ImCheckmark2, ImCheckmark } from "react-icons/im";
 
-
 function SearchItem(props) {
-  const [selected, setSelected] = useState(false)
-  const log = () =>{
-    
-  }
-  const highlight = props.selectedName === props.name ? "bg-secondary" : ""
+  const [selected, setSelected] = useState(false);
+
+  const highlight = props.selectedName === props.name ? "bg-accent/80" : "";
   return (
     <li
-      onClick={()=>{
-        props.setSelectedRoute(props.route)
-        setSelected(!selected)
+      onClick={() => {
+        props.setSelectedRoute(props.route);
+        setSelected(!selected);
       }}
-      className={`flex flex-row items-center justify-start font-comfortaa rounded mr-4 hover:bg-secondary/80  hover:cursor-pointer ${highlight}`}
+      className={`flex flex-row items-center justify-start font-comfortaa rounded mr-4 hover:bg-accent/50  hover:cursor-pointer ${highlight}`}
     >
       <div className="text-3xl text-center font-bold w-16">{props.grade}</div>
       <main className="flex flex-col text-left m-4 w-2/3">
@@ -26,26 +23,25 @@ function SearchItem(props) {
             {props.name}
           </h1>
           <div className="flex flex-row">
-            {props.completed == "true" && (
+            {props.completed === "true" && (
               <ImCheckmark
                 size={20}
                 className={"text-green-500 cursor-pointer"}
-                onClick={''}
               />
             )}
-            {props.projecting == "true" && (
+            {props.projecting === "true" && (
               <FaHammer
                 size={20}
                 className={"text-orange-500 cursor-pointer"}
               />
             )}
-            {props.flashed == "true" && (
+            {props.flashed === "true" && (
               <BsFillLightningFill
                 size={20}
                 className={"text-yellow-500 cursor-pointer"}
               />
             )}
-            {props.favorite == "true" && (
+            {props.favorite === "true" && (
               <AiFillStar
                 size={20}
                 className={"text-secondary cursor-pointer"}
