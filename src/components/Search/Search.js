@@ -3,8 +3,10 @@ import Slider from "@mui/material/Slider";
 import { AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
 import SearchItem from "./SearchItem";
 import FilterButton from "./FilterButton";
+import RouteInfo from "../RouteInfo/RouteInfo";
 
 const Search = () => {
+  const routes = JSON.parse(localStorage.getItem("routes"));
   const [openMenu, setMenu] = useState(true);
   const [searchInput, setSearchInput] = useState("");
   const [favorites, setFavorites] = useState(false);
@@ -12,10 +14,11 @@ const Search = () => {
   const [completed, setCompleted] = useState(false);
   const [flashed, setFlashed] = useState(false);
   const [grade, setGrade] = useState([0, 10]);
+  const [selectedRoute, setSelectedRoute] = useState(routes[0]);
+
   const updateGradeRange = (e, data) => {
     setGrade(data);
   };
-  const routes = JSON.parse(localStorage.getItem("routes"));
 
   const onChangeSearchInput = (event) => {
     // changes the state for get search results to read
@@ -27,14 +30,15 @@ const Search = () => {
       route.routeName.toLowerCase().includes(searchInput.toLowerCase())
     );
 
-    let notSearchNames = routes.filter((route) =>
-      !route.routeName.toLowerCase().includes(searchInput.toLowerCase())
+    let notSearchNames = routes.filter(
+      (route) =>
+        !route.routeName.toLowerCase().includes(searchInput.toLowerCase())
     );
 
     let searchLocation = notSearchNames.filter((route) =>
       route.location.toLowerCase().includes(searchInput.toLowerCase())
     );
-    const searchResults = [...searchNames,...searchLocation]
+    const searchResults = [...searchNames, ...searchLocation];
     console.log(searchResults);
     return searchResults;
   };
@@ -81,8 +85,9 @@ const Search = () => {
         Number(route.difficulty[1]) >= lowGrade
     );
 
-    if(searchInput)
-    filteredRoutes = getSearchResults(filteredRoutes);
+    if (searchInput) filteredRoutes = getSearchResults(filteredRoutes);
+
+    //selected route
 
     return filteredRoutes.map((route) => {
       return (
@@ -95,6 +100,9 @@ const Search = () => {
           projecting={route.projecting}
           favorite={route.favorite}
           completed={route.completed}
+          setSelectedRoute={setSelectedRoute}
+          selectedName = {selectedRoute.routeName}
+          route={route}
         />
       );
     });
@@ -106,7 +114,7 @@ const Search = () => {
   const toggleCompleted = completed ? "bg-secondary text-white" : "";
 
   return (
-    <main className="flex flex-col md:flex-row md:justify-start h-screen w-screen mx-10">
+    <main className="flex flex-col md:flex-row md:justify-start h-screen mx-10">
       <aside className="mx-5 md:fixed md:left-5">
         <h1 className="text-3xl my-4">Search</h1>
         <input
@@ -184,14 +192,30 @@ const Search = () => {
           </>
         )}
       </aside>
-      <section className="md:mx-72">
+      <section className="md:ml-72 md:mr-16 w-5/6">
         <h1 className="mx-5 md:mx-0 py-2 font-bold font-roboto">RESULTS</h1>
         {
-          <ul className="overflow-auto">
-            {filterRoutes(projecting, favorites, grade[0], grade[1], "")}
+          <ul className="">
+            {filterRoutes(projecting, favorites, grade[0], grade[1])}
           </ul>
         }
       </section>
+      <div className="w-5/6">
+        <aside className="mx-5 md:fixed md:right-15">
+          <RouteInfo
+            key={selectedRoute.routeName}
+            name={selectedRoute.routeName}
+            location={selectedRoute.location}
+            grade={selectedRoute.difficulty[0]}
+            img={selectedRoute.img}
+            desc={selectedRoute.description}
+         u  flashed={selectedRoute.flashed}
+            projecting={selectedRoute.projecting}
+            favorite={selectedRoute.favorite}
+            completed={selectedRoute.completed}
+          />
+        </aside>
+      </div>
     </main>
   );
 };
