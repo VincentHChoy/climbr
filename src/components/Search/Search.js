@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Slider from "@mui/material/Slider";
 import { AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
 import SearchItem from "./SearchItem";
@@ -6,7 +6,8 @@ import FilterButton from "./FilterButton";
 import RouteInfo from "../RouteInfo/RouteInfo";
 
 const Search = () => {
-  const routes = JSON.parse(localStorage.getItem("routes"));
+  const initalRoutes = JSON.parse(localStorage.getItem("routes"));
+  const [routes, setRoutes] = useState(initalRoutes);
   const [openMenu, setMenu] = useState(true);
   const [searchInput, setSearchInput] = useState("");
   const [favorites, setFavorites] = useState(false);
@@ -15,6 +16,15 @@ const Search = () => {
   const [flashed, setFlashed] = useState(false);
   const [grade, setGrade] = useState([0, 10]);
   const [selectedRoute, setSelectedRoute] = useState(routes[0]);
+  console.log(routes);
+
+  useEffect(() => {
+    const newRoutes = JSON.parse(localStorage.getItem("routes"));
+    setRoutes(newRoutes);
+  }, []);
+
+
+
 
   const updateGradeRange = (e, data) => {
     setGrade(data);
@@ -44,6 +54,7 @@ const Search = () => {
   };
 
   const filterRoutes = (projecting, favorites, lowGrade, highGrade, search) => {
+    //shallow
     let filteredRoutes = [...routes];
 
     if (projecting) {
@@ -69,15 +80,6 @@ const Search = () => {
         (route) => route.flashed == "true"
       );
     }
-
-    //convert grade string to number
-    filteredRoutes.map((route) => {
-      route.difficulty = [
-        route.difficulty,
-        route.difficulty.replace(/[^0-9.]/g, ""),
-      ];
-    });
-
     //filter based on grade
     filteredRoutes = filteredRoutes.filter(
       (route) =>
@@ -101,17 +103,20 @@ const Search = () => {
           favorite={route.favorite}
           completed={route.completed}
           setSelectedRoute={setSelectedRoute}
-          selectedName = {selectedRoute.routeName}
+          selectedName={selectedRoute.routeName}
           route={route}
         />
       );
     });
   };
 
+
+
   const toggleFavorites = favorites ? "bg-secondary text-white" : "";
   const toggleProjecting = projecting ? "bg-secondary text-white" : "";
   const toggleFlashed = flashed ? "bg-secondary text-white" : "";
   const toggleCompleted = completed ? "bg-secondary text-white" : "";
+  const filteredRoutes = filterRoutes(projecting, favorites, grade[0], grade[1])
 
   return (
     <main className="flex flex-col md:flex-row md:justify-start h-screen mx-10">
@@ -195,25 +200,29 @@ const Search = () => {
       <section className="md:ml-72 md:mr-16 w-5/6">
         <h1 className="mx-5 md:mx-0 py-2 font-bold font-roboto">RESULTS</h1>
         {
-          <ul className="">
-            {filterRoutes(projecting, favorites, grade[0], grade[1])}
+          <ul>
+            {routes && filteredRoutes}
           </ul>
         }
       </section>
       <div className="w-5/6">
         <aside className="mx-5 md:fixed md:right-15">
-          <RouteInfo
-            key={selectedRoute.routeName}
-            name={selectedRoute.routeName}
-            location={selectedRoute.location}
-            grade={selectedRoute.difficulty[0]}
-            img={selectedRoute.img}
-            desc={selectedRoute.description}
-         u  flashed={selectedRoute.flashed}
-            projecting={selectedRoute.projecting}
-            favorite={selectedRoute.favorite}
-            completed={selectedRoute.completed}
-          />
+          {routes && (
+            <RouteInfo
+              key={selectedRoute.routeName}
+              name={selectedRoute.routeName}
+              location={selectedRoute.location}
+              grade={selectedRoute.difficulty}
+              img={selectedRoute.img}
+              desc={selectedRoute.description}
+              flashed={selectedRoute.flashed}
+              projecting={selectedRoute.projecting}
+              favorite={selectedRoute.favorite}
+              completed={selectedRoute.completed}
+              setRoutes={setRoutes}
+              allRoutes ={routes}
+            />
+          )}
         </aside>
       </div>
     </main>
