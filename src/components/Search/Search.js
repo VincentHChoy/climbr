@@ -16,15 +16,14 @@ const Search = () => {
   const [completed, setCompleted] = useState(false);
   const [flashed, setFlashed] = useState(false);
   const [grade, setGrade] = useState([0, 10]);
-  const [selectedRoute, setSelectedRoute] = useState('');
+  const [selectedRoute, setSelectedRoute] = useState(['','']);
+
+  const mobileScroll = openInfo ? 'overflow-hidden' : ''
 
   useEffect(() => {
     const newRoutes = JSON.parse(localStorage.getItem("routes"));
     setRoutes(newRoutes);
   }, []);
-
-
-
 
   const updateGradeRange = (e, data) => {
     setGrade(data);
@@ -91,7 +90,7 @@ const Search = () => {
 
     //selected route
 
-    return filteredRoutes.map((route,index) => {
+    return filteredRoutes.map((route, index) => {
       return (
         <SearchItem
           key={index}
@@ -113,16 +112,19 @@ const Search = () => {
     });
   };
 
-
-
   const toggleFavorites = favorites ? "bg-secondary text-white" : "";
   const toggleProjecting = projecting ? "bg-secondary text-white" : "";
   const toggleFlashed = flashed ? "bg-secondary text-white" : "";
   const toggleCompleted = completed ? "bg-secondary text-white" : "";
-  const filteredRoutes = filterRoutes(projecting, favorites, grade[0], grade[1])
+  const filteredRoutes = filterRoutes(
+    projecting,
+    favorites,
+    grade[0],
+    grade[1]
+  );
 
   return (
-    <main className="flex flex-col md:flex-row md:justify-start h-screen mx-10">
+    <main className="flex flex-col md:flex-row md:justify-start h-screen mx-10 md:w-5/6">
       <aside className="mx-5 md:fixed md:left-5">
         <h1 className="text-3xl my-4">Search</h1>
         <input
@@ -132,7 +134,7 @@ const Search = () => {
           onChange={onChangeSearchInput}
         />
 
-        <h1 className="flex flex-row justify-between font-roboto font-bold w-4/5 md:w-full">
+        <h1 className="flex flex-row justify-between font-roboto font-bold w-full">
           FILTER BY
           {openMenu ? (
             <AiOutlineMenuUnfold
@@ -189,7 +191,7 @@ const Search = () => {
             <button className="border border-secondary bg-secondary rounded-full px-5 py-2 mx-2 text-white my-2">
               V{grade[1]}
             </button>
-            <div className="w-2/3">
+            <div className="w-full">
               <Slider
                 value={grade}
                 onChange={updateGradeRange}
@@ -202,27 +204,23 @@ const Search = () => {
       </aside>
       <section className="md:ml-72 md:mr-16 w-5/6">
         <h1 className="mx-5 md:mx-0 py-2 font-bold font-roboto">RESULTS</h1>
-        {
-          <ul>
-            {routes && filteredRoutes}
-          </ul>
-        }
+        {<ul className={`md:w-5/6 ${mobileScroll}`}>{routes && filteredRoutes}</ul>}
       </section>
       <div className="w-5/6">
-        <aside className="mx-5 md:fixed md:right-15">
-          {routes && openInfo && (
+        {routes && openInfo && (
+          <aside className={`fixed top-0 left-0 h-screen bg-white md:bg-none md:right-0 md:w-1/2 md:left-auto md:h-1/2`}>
             <RouteInfo
               key={selectedRoute[0].routeName}
               route={selectedRoute[0]}
               index={selectedRoute[1]}
-              allRoutes ={routes}
+              allRoutes={routes}
               openInfo={openInfo}
-              setOpenInfo ={setOpenInfo}
+              setOpenInfo={setOpenInfo}
               setSelectedRoute={setSelectedRoute}
               setRoutes={setRoutes}
             />
-          )}
-        </aside>
+          </aside>
+        )}
       </div>
     </main>
   );

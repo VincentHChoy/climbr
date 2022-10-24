@@ -56,7 +56,7 @@ function RouteInfo(props) {
           className={"text-secondary cursor-pointer"}
           onClick={() => {
             props.setOpenInfo(!props.openInfo);
-            props.setSelectedRoute("");
+            props.setSelectedRoute(["",""]);
           }}
         />
         <span className="mx-5 text-left w-5/6">
