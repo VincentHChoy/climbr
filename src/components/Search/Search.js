@@ -104,7 +104,7 @@ const Search = () => {
           favorite={route.favorite}
           completed={route.completed}
           setSelectedRoute={setSelectedRoute}
-          selectedName={selectedRoute.routeName}
+          selectedName={selectedRoute[0].routeName}
           routes={routes}
           setOpenInfo={setOpenInfo}
           openInfo={openInfo}
