@@ -11,8 +11,7 @@ import { IoIosArrowBack } from "react-icons/io";
 import Icon from "./Icon";
 
 function RouteInfo(props) {
-  const route = props.route;
-  const [completedOn, setCompletedOn] = useState(route.completedOn);
+  const route = props.allRoutes[props.index];
 
   const img =
     route.img !== "null"
@@ -23,23 +22,24 @@ function RouteInfo(props) {
     props.allRoutes.map((route) => {
       if (route.routeName === routeName) {
         route[itemToMark] = route[itemToMark] === "true" ? "false" : "true";
-        if (itemToMark === "flashed") {
+
+        if (itemToMark === "flashed" && route.completed === "false") {
           log("completed", route.routeName);
         }
-        if(route.completed === 'false') route.flashed = 'false'
-      }
 
-      if (itemToMark === "completed") {
-        route.completedOn =
-          route.completedOn === "not yet"
-            ? new Date().toLocaleDateString({
-                weekday: "long",
-                year: "numeric",
-                month: "long",
-                day: "numeric",
-              })
-            : "not yet";
-        setCompletedOn(route.completedOn);
+        if (route.completed === "false") route.flashed = "false";
+
+        if (itemToMark === "completed") {
+          route.completedOn =
+            route.completedOn === "not yet"
+              ? new Date().toLocaleDateString("en-US", {
+                  weekday: "long",
+                  year: "numeric",
+                  month: "long",
+                  day: "numeric",
+                })
+              : "not yet";
+        }
       }
     });
 
@@ -72,74 +72,59 @@ function RouteInfo(props) {
           <h1 className="text-3xl font-bold">{route.difficulty[0]}</h1>
         </span>
         <div className="flex flex-row">
-          <Icon
-            icon1={
-              <ImCheckmark2
-                size={32}
-                className={"text-green-500 cursor-pointer"}
-                onClick={() => log("completed", route.routeName)}
-              />
-            }
-            icon2={
-              <ImCheckmark
-                size={32}
-                className={"text-green-500 cursor-pointer"}
-                onClick={() => log("completed", route.routeName)}
-              />
-            }
-            action={route.completed}
-          />
-          <Icon
-            icon1={
-              <HiOutlineWrenchScrewdriver
-                size={32}
-                className={"text-orange-500 cursor-pointer"}
-                onClick={() => log("projecting", route.routeName)}
-              />
-            }
-            icon2={
-              <HiWrenchScrewdriver
-                size={32}
-                className={"text-orange-500 cursor-pointer"}
-                onClick={() => log("projecting", route.routeName)}
-              />
-            }
-            action={route.projecting}
-          />
-          <Icon
-            icon1={
-              <BsLightning
-                size={32}
-                className={"text-yellow-500 cursor-pointer"}
-                onClick={() => log("flashed", route.routeName)}
-              />
-            }
-            icon2={
-              <BsLightningFill
-                size={32}
-                className={"text-yellow-500 cursor-pointer"}
-                onClick={() => log("flashed", route.routeName)}
-              />
-            }
-            action={route.flashed}
-          />
-          <Icon
-            icon1={
-              <AiOutlineStar
-                size={32}
-                className={"text-secondary cursor-pointer"}
-                onClick={() => log("favorite", route.routeName)}
-              />
-            }
-            icon2={
-              <AiFillStar
-                size={32}
-                className={"text-secondary cursor-pointer"}
-                onClick={() => log("favorite", route.routeName)}
-              />
-            }
-            action={route.favorite}
-          />
+          {route.completed === "true" ? (
+            <ImCheckmark
+              size={32}
+              className={"text-green-500 cursor-pointer"}
+              onClick={() => log("completed", route.routeName)}
+            />
+          ) : (
+            <ImCheckmark2
+              size={32}
+              className={"text-green-500 cursor-pointer"}
+              onClick={() => log("completed", route.routeName)}
+            />
+          )}
+          {route.flashed === "true" ? (
+            <BsLightningFill
+              size={32}
+              className={"text-yellow-500 cursor-pointer"}
+              onClick={() => log("flashed", route.routeName)}
+            />
+          ) : (
+            <BsLightning
+              size={32}
+              className={"text-yellow-500 cursor-pointer"}
+              onClick={() => log("flashed", route.routeName)}
+            />
+          )}
+
+          {route.projecting === "true" ? (
+            <HiWrenchScrewdriver
+              size={32}
+              className={"text-orange-500 cursor-pointer"}
+              onClick={() => log("projecting", route.routeName)}
+            />
+          ) : (
+            <HiOutlineWrenchScrewdriver
+              size={32}
+              className={"text-orange-500 cursor-pointer"}
+              onClick={() => log("projecting", route.routeName)}
+            />
+          )}
+          {route.favorite === "true" ? (
+            <AiFillStar
+              size={32}
+              className={"text-secondary cursor-pointer"}
+              onClick={() => log("favorite", route.routeName)}
+            />
+          ) : (
+            <AiOutlineStar
+              size={32}
+              className={"text-secondary cursor-pointer"}
+              onClick={() => log("favorite", route.routeName)}
+            />
+          )}
         </div>
       </section>
       <section className="mx-5">
@@ -150,7 +135,7 @@ function RouteInfo(props) {
         <img className=" rounded-2xl" src={img} />
       </section>
       <br />
-      <h1 className="font-bold">completed on: {completedOn}</h1>
+      <h1 className="font-bold">completed on: {route.completedOn}</h1>
     </main>
   );
 }
