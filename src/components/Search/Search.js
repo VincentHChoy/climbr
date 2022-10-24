@@ -17,7 +17,7 @@ const Search = () => {
   const [flashed, setFlashed] = useState(false);
   const [grade, setGrade] = useState([0, 10]);
   const [selectedRoute, setSelectedRoute] = useState('');
-  
+
   useEffect(() => {
     const newRoutes = JSON.parse(localStorage.getItem("routes"));
     setRoutes(newRoutes);
@@ -91,10 +91,11 @@ const Search = () => {
 
     //selected route
 
-    return filteredRoutes.map((route) => {
+    return filteredRoutes.map((route,index) => {
       return (
         <SearchItem
-          key={route.routeName}
+          key={index}
+          index={index}
           name={route.routeName}
           location={route.location}
           grade={route.difficulty[0]}
@@ -104,7 +105,7 @@ const Search = () => {
           completed={route.completed}
           setSelectedRoute={setSelectedRoute}
           selectedName={selectedRoute.routeName}
-          route={route}
+          routes={routes}
           setOpenInfo={setOpenInfo}
           openInfo={openInfo}
         />
@@ -211,8 +212,9 @@ const Search = () => {
         <aside className="mx-5 md:fixed md:right-15">
           {routes && openInfo && (
             <RouteInfo
-              key={selectedRoute.routeName}
-              route={selectedRoute}
+              key={selectedRoute[0].routeName}
+              route={selectedRoute[0]}
+              index={selectedRoute[1]}
               allRoutes ={routes}
               openInfo={openInfo}
               setOpenInfo ={setOpenInfo}

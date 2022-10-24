@@ -9,7 +9,7 @@ function SearchItem(props) {
   return (
     <li
       onClick={() => {
-        props.setSelectedRoute(props.route);
+        props.setSelectedRoute([props.routes[props.index],props.index]);
         props.setOpenInfo(true)
       }}
       className={`flex flex-row items-center justify-start font-comfortaa rounded mr-4 hover:bg-accent/50  hover:cursor-pointer ${highlight}`}
