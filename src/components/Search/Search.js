@@ -8,6 +8,7 @@ import RouteInfo from "../RouteInfo/RouteInfo";
 const Search = () => {
   const initalRoutes = JSON.parse(localStorage.getItem("routes"));
   const [routes, setRoutes] = useState(initalRoutes);
+  const [openInfo, setOpenInfo] = useState(false);
   const [openMenu, setMenu] = useState(true);
   const [searchInput, setSearchInput] = useState("");
   const [favorites, setFavorites] = useState(false);
@@ -15,9 +16,8 @@ const Search = () => {
   const [completed, setCompleted] = useState(false);
   const [flashed, setFlashed] = useState(false);
   const [grade, setGrade] = useState([0, 10]);
-  const [selectedRoute, setSelectedRoute] = useState(routes[0]);
-  console.log(routes);
-
+  const [selectedRoute, setSelectedRoute] = useState('');
+  
   useEffect(() => {
     const newRoutes = JSON.parse(localStorage.getItem("routes"));
     setRoutes(newRoutes);
@@ -105,6 +105,8 @@ const Search = () => {
           setSelectedRoute={setSelectedRoute}
           selectedName={selectedRoute.routeName}
           route={route}
+          setOpenInfo={setOpenInfo}
+          openInfo={openInfo}
         />
       );
     });
@@ -207,20 +209,15 @@ const Search = () => {
       </section>
       <div className="w-5/6">
         <aside className="mx-5 md:fixed md:right-15">
-          {routes && (
+          {routes && openInfo && (
             <RouteInfo
               key={selectedRoute.routeName}
-              name={selectedRoute.routeName}
-              location={selectedRoute.location}
-              grade={selectedRoute.difficulty}
-              img={selectedRoute.img}
-              desc={selectedRoute.description}
-              flashed={selectedRoute.flashed}
-              projecting={selectedRoute.projecting}
-              favorite={selectedRoute.favorite}
-              completed={selectedRoute.completed}
-              setRoutes={setRoutes}
+              route={selectedRoute}
               allRoutes ={routes}
+              openInfo={openInfo}
+              setOpenInfo ={setOpenInfo}
+              setSelectedRoute={setSelectedRoute}
+              setRoutes={setRoutes}
             />
           )}
         </aside>

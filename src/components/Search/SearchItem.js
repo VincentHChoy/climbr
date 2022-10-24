@@ -5,14 +5,12 @@ import { AiFillStar } from "react-icons/ai";
 import { ImCheckmark2, ImCheckmark } from "react-icons/im";
 
 function SearchItem(props) {
-  const [selected, setSelected] = useState(false);
-
-  const highlight = props.selectedName === props.name ? "bg-accent/80" : "";
+  const highlight = (props.selectedName === props.name) ? "bg-accent/80" : "";
   return (
     <li
       onClick={() => {
         props.setSelectedRoute(props.route);
-        setSelected(!selected);
+        props.setOpenInfo(true)
       }}
       className={`flex flex-row items-center justify-start font-comfortaa rounded mr-4 hover:bg-accent/50  hover:cursor-pointer ${highlight}`}
     >
