@@ -11,9 +11,6 @@ function SearchItem(props) {
   return (
     <li
       onClick={() => {
-
-        console.log('index',props.index);
-        console.log(index)
         props.setSelectedRoute([props.routes[index], index]);
         props.setOpenInfo(true)
       }}

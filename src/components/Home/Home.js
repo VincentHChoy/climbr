@@ -3,10 +3,12 @@ import List from "./List";
 import { FaHammer } from "react-icons/fa";
 import { BsFillLightningFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
+import Navbar from "../Navbar/Navbar";
 
 function Home() {
   const [routes, setRoutes] = useState([]);
   const [user, setUser] = useState([]);
+
   const dummyUserData = {
     name: "Lucy",
     img: "https://styles.redditmedia.com/t5_2spc8g/styles/communityIcon_5aa9ayflu3p91.png",
@@ -25,7 +27,7 @@ function Home() {
       })
       .then((myJson) => {
         setRoutes(myJson);
-        localStorage.setItem("routes", JSON.stringify(myJson));
+      localStorage.setItem("routes", JSON.stringify(myJson));
       });
   };
 
@@ -51,7 +53,6 @@ function Home() {
   }, []);
 
   const userData = JSON.parse(localStorage.user);
-  console.log(userData.projects);
 
   return (
     <div className="h-screen">
@@ -79,6 +80,7 @@ function Home() {
           list={userData.favorites}
         />
       </section>
+      <Navbar/>
     </div>
   );
 }
