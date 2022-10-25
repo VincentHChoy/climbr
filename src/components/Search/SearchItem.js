@@ -6,10 +6,15 @@ import { ImCheckmark2, ImCheckmark } from "react-icons/im";
 
 function SearchItem(props) {
   const highlight = (props.selectedName === props.name) ? "bg-accent/80" : "";
+  const index = props.routes.findIndex(route => route.routeName === props.name)
+
   return (
     <li
       onClick={() => {
-        props.setSelectedRoute([props.routes[props.index],props.index]);
+
+        console.log('index',props.index);
+        console.log(index)
+        props.setSelectedRoute([props.routes[index], index]);
         props.setOpenInfo(true)
       }}
       className={`flex flex-row items-center justify-start font-comfortaa rounded mr-4 hover:bg-accent/50  hover:cursor-pointer ${highlight}`}
