@@ -4,6 +4,7 @@ import { AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
 import SearchItem from "./SearchItem";
 import FilterButton from "./FilterButton";
 import RouteInfo from "../RouteInfo/RouteInfo";
+import Navbar from "../Navbar/Navbar";
 
 const Search = () => {
   const initalRoutes = JSON.parse(localStorage.getItem("routes"));
@@ -124,6 +125,7 @@ const Search = () => {
   );
 
   return (
+    <>
     <main className="flex flex-col md:flex-row md:justify-start h-screen mx-10 md:w-5/6">
       <aside className="mx-5 md:fixed md:left-5">
         <h1 className="text-3xl my-4">Search</h1>
@@ -223,6 +225,8 @@ const Search = () => {
         )}
       </div>
     </main>
+    <Navbar/>
+    </>
   );
 };
 

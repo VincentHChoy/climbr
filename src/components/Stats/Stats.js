@@ -1,10 +1,14 @@
 import { data } from "autoprefixer";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PieChart } from "react-minimal-pie-chart";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 function Stats(props) {
   const [resetMsg, setResetMsg] = useState(false);
+  const [emptyGraph, setEmptyGraph] = useState(false);
+
   const dummyUserData = {
     name: "Lucy",
     img: "https://styles.redditmedia.com/t5_2spc8g/styles/communityIcon_5aa9ayflu3p91.png",
@@ -20,16 +24,18 @@ function Stats(props) {
     const flashed = initalRoutes.filter(
       (route) => route.flashed === "true"
     ).length;
-    const highestGrade = completed[completed.length - 1].difficulty[0] || "N/A";
+    const highestGrade =
+      completed.length > 0
+        ? completed[completed.length - 1].difficulty[0]
+        : "N/A";
 
     const gradeDistribution = {};
+
     const getGrades = completed.map((route) => {
       if (route.difficulty[0] in gradeDistribution)
         gradeDistribution[route.difficulty[0]] += 1;
       else gradeDistribution[route.difficulty[0]] = 1;
     });
-
-    console.log(gradeDistribution);
 
     return {
       highestGrade: highestGrade,
@@ -40,7 +46,7 @@ function Stats(props) {
   };
 
   const stats = getStats();
-  console.log(stats.gradeDistribution);
+  // console.log(stats.gradeDistribution);
   // localStorage.setItem("routes", JSON.stringify(props.allRoutes));
 
   const getGrades = () => {
@@ -68,6 +74,12 @@ function Stats(props) {
     return data;
   };
 
+  useEffect(() => {
+    if (Object.keys(stats.gradeDistribution).length === 0) {
+      setEmptyGraph(true);
+    }
+  }, []);
+
   const data = getGrades();
 
   return (
@@ -88,7 +100,7 @@ function Stats(props) {
             <h2 className="font-bold text-base text-left">
               {"Number of Flashes"}
             </h2>
-            <h1 className="text-3xl font-bold">{"15"}</h1>
+            <h1 className="text-3xl font-bold">{stats.flashes}</h1>
           </span>
           <span className="mx-5 text-left">
             <h2 className="font-bold text-base text-left">
@@ -97,47 +109,57 @@ function Stats(props) {
             <h1 className="text-3xl font-bold">{stats.highestGrade}</h1>
           </span>
         </section>
-        <div className="my-5">
-          <PieChart
-            style={{ width: "300px", height: "300px" }}
-            data={data}
-            lineWidth={20}
-            paddingAngle={18}
-            rounded
-            // label={(data) => data.dataEntry.title}
-            labelStyle={(index) => ({
-              fill: data[index].color,
-              fontSize: "5px",
-              fontFamily: "sans",
-              color: "#5A6DE0",
-            })}
-            label={({ x, y, dx, dy, dataEntry }) => (
-              <text
-                dominantBaseline="central"
-                textAnchor="middle"
-                style={{
-                  fontSize: "5px",
-                  pointerEvents: "none",
-                }}
-              >
-                <tspan
-                  style={{ fill: `${dataEntry.color}`, fontWeight: "bold" }}
-                  x={x}
-                  y={y}
-                  dx={dx}
-                  dy={dy}
+        {emptyGraph && (
+          <Link to="/search">
+            <h1 className="text-center my-16 cursor-pointer hover:underline">
+              Log some routes to see the graph
+            </h1>
+          </Link>
+        )}
+        {!emptyGraph && (
+          <div className="my-5">
+            <PieChart
+              style={{ width: "300px", height: "300px" }}
+              data={data}
+              lineWidth={20}
+              paddingAngle={18}
+              rounded
+              // label={(data) => data.dataEntry.title}
+              labelStyle={(index) => ({
+                fill: data[index].color,
+                fontSize: "5px",
+                fontFamily: "sans",
+                color: "#5A6DE0",
+              })}
+              label={({ x, y, dx, dy, dataEntry }) => (
+                <text
+                  dominantBaseline="central"
+                  textAnchor="middle"
+                  style={{
+                    fontSize: "5px",
+                    pointerEvents: "none",
+                  }}
                 >
-                  {dataEntry.title}
-                </tspan>
-                <tspan x={x} y={y + 5} dx={dx} dy={dy}>
-                  {dataEntry.value}
-                </tspan>
-              </text>
-            )}
-            labelPosition={50}
-            animate
-          />
-        </div>
+                  <tspan
+                    style={{ fill: `${dataEntry.color}`, fontWeight: "bold" }}
+                    x={x}
+                    y={y}
+                    dx={dx}
+                    dy={dy}
+                  >
+                    {dataEntry.title}
+                  </tspan>
+                  <tspan x={x} y={y + 5} dx={dx} dy={dy}>
+                    {dataEntry.value}
+                  </tspan>
+                </text>
+              )}
+              labelPosition={50}
+              animate
+            />
+          </div>
+        )}
+
         <div className="flex flex-col">
           <Button
             text={"Reset Progress"}
@@ -150,12 +172,13 @@ function Stats(props) {
               <Button
                 text={"Yes"}
                 color={"text-red-500 border-red-500 hover:bg-red-500 px-2"}
-                handleClick={()=>localStorage.clear()}
+                handleClick={() => localStorage.clear()}
               />
             </>
           )}
         </div>
       </section>
+      <Navbar/>
     </div>
   );
 }
