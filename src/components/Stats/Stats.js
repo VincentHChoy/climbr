@@ -4,20 +4,13 @@ import { PieChart } from "react-minimal-pie-chart";
 import Button from "../Button/Button";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import Picture from "../ProfilePicture/Picture";
 
 function Stats(props) {
   const [resetMsg, setResetMsg] = useState(false);
   const [emptyGraph, setEmptyGraph] = useState(false);
   const navigate = useNavigate()
-
-  const dummyUserData = {
-    name: "Lucy",
-    img: "https://styles.redditmedia.com/t5_2spc8g/styles/communityIcon_5aa9ayflu3p91.png",
-    title: "net-runner",
-  };
-
   const initalRoutes = JSON.parse(localStorage.getItem("routes"));
-  const name  = localStorage.getItem('name')
 
   const getStats = () => {
     const completed = initalRoutes.filter(
@@ -67,7 +60,6 @@ function Stats(props) {
       "#FF7878",
     ].reverse();
     
-    console.log(colors);
     for (const grade in stats.gradeDistribution) {
       data.push({
         title: grade,
@@ -89,10 +81,7 @@ function Stats(props) {
   return (
     <div className="h-screen">
       <section className=" flex flex-col justify-around items-center my-2 py-10">
-        <img className="rounded-full" src={dummyUserData.img}></img>
-        <h2 className="text-3xl font-comfortaa font-bold">
-          {name}
-        </h2>
+        <Picture/>
         <section className="flex flex-row flex-wrap justify-center md:items-start md:justify-start w-90 my-5">
           <span className="mx-5 text-left">
             <h2 className="font-bold text-base md:text-left">
@@ -123,6 +112,7 @@ function Stats(props) {
         {!emptyGraph && (
           <div className="h-1/2 my-5">
             <PieChart
+              key={data.title}
               data={data}
               lineWidth={20}
               paddingAngle={18}
