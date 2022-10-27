@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { FaHammer } from "react-icons/fa";
 import { BsLightning, BsLightningFill } from "react-icons/bs";
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { ImCheckmark2, ImCheckmark } from "react-icons/im";
@@ -8,7 +7,7 @@ import {
   HiWrenchScrewdriver,
 } from "react-icons/hi2";
 import { IoIosArrowBack } from "react-icons/io";
-import Icon from "./Icon";
+
 
 function RouteInfo(props) {
   const route = props.allRoutes[props.index];
@@ -52,7 +51,7 @@ function RouteInfo(props) {
   };
 
   return (
-    <main className="flex flex-col text-left m-4 overflow-hidden">
+    <main className="flex flex-col text-left m-4 h-screen overflow-auto pb-28">
       <section className="flex flex-row">
         <IoIosArrowBack
           size={32}
