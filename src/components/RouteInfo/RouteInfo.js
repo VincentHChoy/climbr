@@ -40,14 +40,11 @@ function RouteInfo(props) {
                   day: "numeric",
                 })
               : "not yet";
-          const achievements = JSON.parse(localStorage.getItem("recent"));
-          localStorage.setItem(
-            "recent",
-            JSON.stringify([...achievements, route])
-          );
         }
       }
     });
+    const achievements = JSON.parse(localStorage.getItem("recent"));
+    localStorage.setItem("recent", JSON.stringify([...achievements, route]));
 
     localStorage.setItem("routes", JSON.stringify(props.allRoutes));
     const newRoutes = JSON.parse(localStorage.getItem("routes"));
