@@ -2,12 +2,13 @@ import { data } from "autoprefixer";
 import React, { useEffect, useState } from "react";
 import { PieChart } from "react-minimal-pie-chart";
 import Button from "../Button/Button";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 
 function Stats(props) {
   const [resetMsg, setResetMsg] = useState(false);
   const [emptyGraph, setEmptyGraph] = useState(false);
+  const navigate = useNavigate()
 
   const dummyUserData = {
     name: "Lucy",
@@ -174,7 +175,11 @@ function Stats(props) {
               <Button
                 text={"Yes"}
                 color={"text-red-500 border-red-500 hover:bg-red-500 px-2 mb-14"}
-                handleClick={() => localStorage.clear()}
+                handleClick={() => {
+                  localStorage.clear()
+                  navigate("/")
+                }
+                }
               />
             </>
           )}
