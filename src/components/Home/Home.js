@@ -19,9 +19,7 @@ function Home() {
     const currentName = localStorage.getItem("name");
     if (!currentName) navigate("/");
     else {
-      const getAchievements = JSON.parse(
-        localStorage.getItem("recent")
-      ).reverse();
+      const getAchievements = JSON.parse(localStorage.getItem("recent"));
       setAchievements(getAchievements);
     }
   }, []);
@@ -35,11 +33,11 @@ function Home() {
       <section className="flex flex-col items-center justify-center">
         <div className="flex flex-row items-center">
           <AiOutlineDingding size={50} className="text-secondary" />
-          <h1 className="text-2xl font-comfortaa">Recent Achievements</h1>
+          <h1 className="text-2xl font-comfortaa">Achievements</h1>
         </div>
-          <ul className="flex flex-col">
-            <List list={achievements} />
-          </ul>
+        <ul className="flex flex-col">
+          <List list={achievements}/>
+        </ul>
       </section>
       <Navbar />
     </div>
