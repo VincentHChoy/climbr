@@ -9,26 +9,24 @@ function Register() {
   const navigate = useNavigate();
 
   useEffect(() => {
-    const currentName = localStorage.getItem('name');
-    if (currentName) navigate('/home')
-
-  }, [])
+    const currentName = localStorage.getItem("name");
+    if (currentName) navigate("/home");
+  }, []);
 
   const handleChange = (e) => {
     setName(e.target.value);
   };
-  
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const userRegEx = /^[a-zA-Z0-9]+$/;
     const userResult = name.replace(userRegEx, "");
 
     if (userResult.length === 0) {
-    localStorage.setItem('name', name);
-      localStorage.setItem('recent', JSON.stringify([]));
-    setRoutesData()
-    navigate("/home")
-
+      localStorage.setItem("name", name);
+      localStorage.setItem("recent", JSON.stringify([]));
+      setRoutesData();
+      navigate("/home");
     } else setValidName(false);
   };
 
@@ -69,9 +67,9 @@ function Register() {
         />
         <Button text={"Next"} />
         {!validName && (
-            <span className="text-red-500 text-center">
-              Please enter a name limited to letters and numbers
-            </span>
+          <span className="text-red-500 text-center">
+            Please enter a name limited to letters and numbers
+          </span>
         )}
       </form>
     </main>
