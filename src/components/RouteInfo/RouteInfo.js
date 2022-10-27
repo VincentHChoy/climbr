@@ -134,7 +134,7 @@ function RouteInfo(props) {
         <br />
         <p className="w-2/3 break-normal">{route.description}</p>
         <br />
-        <img className=" rounded-2xl" src={img} />
+        <img className="w-72 rounded-2xl" src={img} />
       </section>
       <br />
       <h1 className="font-bold">completed on: {route.completedOn}</h1>

@@ -1,12 +1,6 @@
 import React from "react";
-import { FaHammer } from "react-icons/fa";
-import { BsLightning, BsLightningFill } from "react-icons/bs";
-import { AiFillStar, AiOutlineStar } from "react-icons/ai";
-import { ImCheckmark2, ImCheckmark } from "react-icons/im";
-import {
-  HiOutlineWrenchScrewdriver,
-  HiWrenchScrewdriver,
-} from "react-icons/hi2";
+import { BsLightningFill } from "react-icons/bs";
+import { ImCheckmark } from "react-icons/im";
 import { IoIosArrowBack } from "react-icons/io";
 
 function AchievementInfo(props) {
@@ -51,15 +45,15 @@ function AchievementInfo(props) {
               size={32}
               className={"text-yellow-500 cursor-pointer"}
             />
-          ) }
+          )}
         </div>
       </section>
       <section className="mx-5">
         <h1 className="font-bold">Description</h1>
         <br />
-        <p className="w-2/3 break-normal">{route.description}</p>
+        <p className="break-normal md:w-2/3">{route.description}</p>
         <br />
-        <img className=" rounded-2xl" src={img} />
+        <img className="w-72 rounded-2xl" src={img} />
       </section>
       <br />
       <h1 className="font-bold">completed on: {route.completedOn}</h1>
