@@ -49,7 +49,6 @@ const Search = () => {
       route.location.toLowerCase().includes(searchInput.toLowerCase())
     );
     const searchResults = [...searchNames, ...searchLocation];
-    console.log(searchResults);
     return searchResults;
   };
 
