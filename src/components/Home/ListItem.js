@@ -19,7 +19,7 @@ function ListItem(props) {
           <h1 className="font-bold text-xl whitespace-nowrap">
             {props.name}
           </h1>
-          <h2 className="text-base">{props.location}</h2>
+          {/* <h2 className="text-base">{props.location}</h2> */}
           <h2 className="text-base">{props.completed}</h2>
         </section>
       </section>
