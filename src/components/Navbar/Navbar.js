@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { BsHouse, BsSearch } from "react-icons/bs";
 import { IoStatsChart } from "react-icons/io5";
-import { Link, useParams, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 function Navbar() {
   const { pathname } = useLocation();
