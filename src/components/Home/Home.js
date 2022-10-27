@@ -1,86 +1,47 @@
 import React, { useEffect, useState } from "react";
 import List from "./List";
-import { FaHammer } from "react-icons/fa";
-import { BsFillLightningFill } from "react-icons/bs";
-import { AiFillStar } from "react-icons/ai";
+import { AiOutlineDingding } from "react-icons/ai";
 import Navbar from "../Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+import ListItem from "./ListItem";
 
 function Home() {
-  const [routes, setRoutes] = useState([]);
-  const [user, setUser] = useState([]);
-
+  const [achievements, setAchievements] = useState([]);
   const dummyUserData = {
     name: "Lucy",
     img: "https://styles.redditmedia.com/t5_2spc8g/styles/communityIcon_5aa9ayflu3p91.png",
     title: "net-runner",
   };
-
-  const setRoutesData = () => {
-    fetch("routes.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((myJson) => {
-        setRoutes(myJson);
-      localStorage.setItem("routes", JSON.stringify(myJson));
-      });
-  };
-
-  const setUserData = () => {
-    fetch("user.json", {
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json",
-      },
-    })
-      .then((response) => {
-        return response.json();
-      })
-      .then((myJson) => {
-        setUser(myJson);
-        localStorage.setItem("user", JSON.stringify(myJson));
-      });
-  };
+  const navigate = useNavigate();
+  const currentName = localStorage.getItem("name") || "";
 
   useEffect(() => {
-    setRoutesData();
-    setUserData();
+    const currentName = localStorage.getItem("name");
+    if (!currentName) navigate("/");
+    else {
+      const getAchievements = JSON.parse(
+        localStorage.getItem("recent")
+      ).reverse();
+      setAchievements(getAchievements);
+    }
   }, []);
-
-  const userData = JSON.parse(localStorage.user);
 
   return (
     <div className="h-screen">
-      <section className="flex flex-col justify-center items-center h-1/2">
+      <section className="flex flex-col justify-center items-center my-5">
         <img className="rounded-full" src={dummyUserData.img}></img>
-        <h2 className="text-3xl font-comfortaa font-bold">
-          {dummyUserData.name}
-        </h2>
-        <h3>{dummyUserData.title}</h3>
+        <h2 className="text-3xl font-comfortaa font-bold">{currentName}</h2>
       </section>
       <section className="flex flex-col items-center justify-center">
-        <List
-          title={"Your Projects"}
-          icon={<FaHammer size={32} className="text-primary" />}
-          list={userData.projects}
-        />
-        <List
-          title={"Your Flashes"}
-          icon={<BsFillLightningFill size={32} className="text-primary" />}
-          list={userData.flashes}
-        />
-        <List
-          title={"Your Favorites"}
-          icon={<AiFillStar size={32} className="text-primary" />}
-          list={userData.favorites}
-        />
+        <div className="flex flex-row items-center">
+          <AiOutlineDingding size={50} className="text-secondary" />
+          <h1 className="text-2xl font-comfortaa">Recent Achievements</h1>
+        </div>
+          <ul className="flex flex-col">
+            <List list={achievements} />
+          </ul>
       </section>
-      <Navbar/>
+      <Navbar />
     </div>
   );
 }

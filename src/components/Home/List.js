@@ -1,9 +1,7 @@
 import React, { useState } from "react";
-import { AiOutlineMenu, AiOutlineMenuUnfold } from "react-icons/ai";
 import ListItem from "./ListItem";
 
 function List(props) {
-  const [openMenu, setMenu] = useState(null);
   const list = props.list.map((route) => {
     // console.log("route",route);
     return (
@@ -11,30 +9,15 @@ function List(props) {
         name={route.routeName}
         location={route.location}
         grade={route.difficulty}
+        flashed={route.flashed}
+        completed = {route.completedOn}
       />
     );
   });
 
   return (
-    <main className="flex flex-col">
-      <div className="flex flex-row justify-between items-start w-80 my-2">
-        {props.icon}
-        <h1 className="text-2xl text-left font-bold text-secondary"> {props.title}</h1>
-        {openMenu ? (
-          <AiOutlineMenuUnfold
-            size={28}
-            className="text-primary"
-            onClick={() => setMenu(!openMenu)}
-          />
-        ) : (
-          <AiOutlineMenu
-            size={28}
-            className="text-primary"
-            onClick={() => setMenu(!openMenu)}
-          />
-        )}
-      </div>
-      {openMenu && <ul>{list}</ul>}
+    <main className="flex flex-col h-1/2 overflow-auto relative mb-10">
+      {<ul>{list}</ul>}
     </main>
   );
 }

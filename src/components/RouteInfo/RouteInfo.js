@@ -30,6 +30,7 @@ function RouteInfo(props) {
         if (route.completed === "false") route.flashed = "false";
 
         if (itemToMark === "completed") {
+          route.completedOnNum = new Date().now;
           route.completedOn =
             route.completedOn === "not yet"
               ? new Date().toLocaleDateString("en-US", {
@@ -39,6 +40,11 @@ function RouteInfo(props) {
                   day: "numeric",
                 })
               : "not yet";
+          const achievements = JSON.parse(localStorage.getItem("recent"));
+          localStorage.setItem(
+            "recent",
+            JSON.stringify([...achievements, route])
+          );
         }
       }
     });
@@ -56,7 +62,7 @@ function RouteInfo(props) {
           className={"text-secondary cursor-pointer"}
           onClick={() => {
             props.setOpenInfo(!props.openInfo);
-            props.setSelectedRoute(["",""]);
+            props.setSelectedRoute(["", ""]);
           }}
         />
         <span className="mx-5 text-left w-5/6">

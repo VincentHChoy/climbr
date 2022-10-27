@@ -206,7 +206,7 @@ const Search = () => {
       </aside>
       <section className="md:ml-72 md:mr-16 w-5/6">
         <h1 className="mx-5 md:mx-0 py-2 font-bold font-roboto">RESULTS</h1>
-        {<ul className={`md:w-5/6 ${mobileScroll}`}>{routes && filteredRoutes}</ul>}
+        {<ul className={`md:w-5/6 pb-20 ${mobileScroll}`}>{routes && filteredRoutes}</ul>}
       </section>
       <div className="w-5/6">
         {routes && openInfo && (
