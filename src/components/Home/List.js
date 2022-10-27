@@ -1,6 +1,7 @@
 import React from "react";
 import ListItem from "./ListItem";
 
+
 function List(props) {
   const filterMistakes = props.list.filter(
     (route) => route.completedOn !== "not yet"
@@ -23,7 +24,6 @@ function List(props) {
   };
 
   const uniqueList = removeDuplicates();
-  console.log(uniqueList);
 
   const sortedResult = uniqueList.sort(
     (a, b) => b.difficulty[1] - a.difficulty[1]
@@ -34,11 +34,13 @@ function List(props) {
   const list = result.map((route) => {
     return (
       <ListItem
+        key={route.routeName}
         name={route.routeName}
         location={route.location}
         grade={route.difficulty}
         flashed={route.flashed}
         completed={route.completedOn}
+        route={route}
       />
     );
   });
