@@ -16,6 +16,7 @@ function Stats(props) {
   };
 
   const initalRoutes = JSON.parse(localStorage.getItem("routes"));
+  const name  = localStorage.getItem('name')
 
   const getStats = () => {
     const completed = initalRoutes.filter(
@@ -33,8 +34,9 @@ function Stats(props) {
 
     const getGrades = completed.map((route) => {
       if (route.difficulty[0] in gradeDistribution)
-        gradeDistribution[route.difficulty[0]] += 1;
-      else gradeDistribution[route.difficulty[0]] = 1;
+      //slice is combining + and -
+        gradeDistribution[route.difficulty[0].replace(/\+|\-/ig, '')] += 1;
+      else gradeDistribution[route.difficulty[0].replace(/\+|\-/ig, '')] = 1;
     });
 
     return {
@@ -46,24 +48,25 @@ function Stats(props) {
   };
 
   const stats = getStats();
-  // console.log(stats.gradeDistribution);
-  // localStorage.setItem("routes", JSON.stringify(props.allRoutes));
 
   const getGrades = () => {
     const data = [];
 
     const colors = [
-      "#5FCCE4",
-      "#5A6DE0",
-      "#1976d2",
-      "#17E5C9",
-      "#BF17E5",
-      "#8217E5",
-      "#E517A5",
-      "#17E54F",
-      "#0767FD",
-      "#FD0740",
-    ];
+      "#C478FF",
+      "#789EFF",
+      "#78FFF7",
+      "#78FFAE",
+      "#7BFF78",
+      "#BCFF78",
+      "#ECFF78",
+      "#FFD978",
+      "#FFB178",
+      "#FF9878",
+      "#FF7878",
+    ].reverse();
+    
+    console.log(colors);
     for (const grade in stats.gradeDistribution) {
       data.push({
         title: grade,
@@ -83,30 +86,30 @@ function Stats(props) {
   const data = getGrades();
 
   return (
-    <div className="">
+    <div className="h-screen">
       <section className=" flex flex-col justify-around items-center my-2 py-10">
         <img className="rounded-full" src={dummyUserData.img}></img>
         <h2 className="text-3xl font-comfortaa font-bold">
-          {dummyUserData.name}
+          {name}
         </h2>
-        <section className="flex flex-row flex-wrap items-start justify-start w-90 my-5">
+        <section className="flex flex-row flex-wrap justify-center md:items-start md:justify-start w-90 my-5">
           <span className="mx-5 text-left">
-            <h2 className="font-bold text-base text-left">
+            <h2 className="font-bold text-base md:text-left">
               {"Routes Completed"}
             </h2>
-            <h1 className="text-3xl font-bold">{stats.routesCompleted}</h1>
+            <h1 className="text-3xl font-bold text-center">{stats.routesCompleted}</h1>
           </span>
           <span className="mx-5 text-left">
-            <h2 className="font-bold text-base text-left">
+            <h2 className="font-bold text-base md:text-left">
               {"Number of Flashes"}
             </h2>
-            <h1 className="text-3xl font-bold">{stats.flashes}</h1>
+            <h1 className="text-3xl font-bold text-center">{stats.flashes}</h1>
           </span>
           <span className="mx-5 text-left">
-            <h2 className="font-bold text-base text-left">
+            <h2 className="font-bold text-base md:text-left">
               {"Highest Completed Grade"}
             </h2>
-            <h1 className="text-3xl font-bold">{stats.highestGrade}</h1>
+            <h1 className="text-3xl font-bold text-center">{stats.highestGrade}</h1>
           </span>
         </section>
         {emptyGraph && (
@@ -117,9 +120,8 @@ function Stats(props) {
           </Link>
         )}
         {!emptyGraph && (
-          <div className="my-5">
+          <div className="h-1/2 my-5">
             <PieChart
-              style={{ width: "300px", height: "300px" }}
               data={data}
               lineWidth={20}
               paddingAngle={18}
@@ -160,7 +162,7 @@ function Stats(props) {
           </div>
         )}
 
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-14">
           <Button
             text={"Reset Progress"}
             handleClick={() => setResetMsg(!resetMsg)}
@@ -168,10 +170,10 @@ function Stats(props) {
           {resetMsg && (
             <>
               <br />
-              <span className="text-red-500 text-center">Are you sure?</span>
+              <span className="text-red-500 text-center mb-10">Are you sure?</span>
               <Button
                 text={"Yes"}
-                color={"text-red-500 border-red-500 hover:bg-red-500 px-2"}
+                color={"text-red-500 border-red-500 hover:bg-red-500 px-2 mb-14"}
                 handleClick={() => localStorage.clear()}
               />
             </>
