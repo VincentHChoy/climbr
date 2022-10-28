@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import { FaHammer } from "react-icons/fa";
 import { BsFillLightningFill } from "react-icons/bs";
 import { AiFillStar } from "react-icons/ai";
-import { ImCheckmark2, ImCheckmark } from "react-icons/im";
+import {ImCheckmark } from "react-icons/im";
 
 function SearchItem(props) {
-  const highlight = (props.selectedName === props.name) ? "bg-accent/80" : "";
+  const highlight = (props.selectedName === props.name) ? "bg-accent/60" : "";
   const index = props.routes.findIndex(route => route.routeName === props.name)
 
   return (
@@ -14,7 +14,7 @@ function SearchItem(props) {
         props.setSelectedRoute([props.routes[index], index]);
         props.setOpenInfo(true)
       }}
-      className={`flex flex-row items-center justify-start font-comfortaa rounded mr-4 hover:bg-accent/50  hover:cursor-pointer ${highlight}`}
+      className={`flex flex-row items-center justify-start font-comfortaa rounded mr-4 hover:bg-accent/40  hover:cursor-pointer ${highlight}`}
     >
       <div className="text-3xl text-center font-bold w-16">{props.grade}</div>
       <main className="flex flex-col text-left m-4 w-2/3">
