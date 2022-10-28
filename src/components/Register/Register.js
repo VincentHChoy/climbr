@@ -2,13 +2,16 @@ import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowBack } from "react-icons/io";
 import Button from "../Button/Button";
+import Picture from "../ProfilePicture/Picture";
 
 function Register() {
   const [name, setName] = useState("");
   const [validName, setValidName] = useState(true);
   const navigate = useNavigate();
 
+
   useEffect(() => {
+    localStorage.setItem("pfp","cat.jpg");
     const currentName = localStorage.getItem("name");
     if (currentName) navigate("/home");
   }, []);
@@ -56,6 +59,7 @@ function Register() {
           onClick={() => {}}
         />
       </Link>
+      <Picture/>
       <h1 className="font-bold text-3xl mt-14">Enter your name:</h1>
       <form className="flex flex-col" onSubmit={handleSubmit}>
         <input
