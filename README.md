@@ -3,7 +3,7 @@ See deployed site here: https://climbr.netlify.app/
 
 ## Introduction
 
-Climbr is an client-side SPA app that is meant to be brought on trips to British Colombia's Squamish to log your completed routes. Specifically the top 100 boulder problems as outlined in Marc Bourdon's Squamish bouldering guide. 
+Climbr is an client-side SPA app to be brought on climbing trips to British Colombia's Squamish to log your sends (completed routes). Specifically the top 100 boulder problems as outlined in Marc Bourdon's Squamish bouldering guide. 
 
 Climbr lets you see how many sends, flashes (routes completed on your first try), and projects (routes that are worked on more than a single session) all in the same place.
 
