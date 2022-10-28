@@ -34,7 +34,7 @@ function Home() {
           {emptyList && (
             <Link to="/search">
               <h1 className="text-center my-16 cursor-pointer hover:underline">
-                Log your flashes and completed routes to see your routes
+                Log your flashes and sends to populate your achievements
               </h1>
             </Link>
           )}
