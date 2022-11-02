@@ -1,5 +1,4 @@
-import { data } from "autoprefixer";
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { PieChart } from "react-minimal-pie-chart";
 import Button from "../Button/Button";
 import { Link, useNavigate } from "react-router-dom";
@@ -9,8 +8,20 @@ import Picture from "../ProfilePicture/Picture";
 function Stats(props) {
   const [resetMsg, setResetMsg] = useState(false);
   const [emptyGraph, setEmptyGraph] = useState(false);
-  const navigate = useNavigate()
+  const dummy = useRef();
+  const navigate = useNavigate();
   const initalRoutes = JSON.parse(localStorage.getItem("routes"));
+
+  const scrollToBottom = () => {
+    setResetMsg(!resetMsg);
+    setTimeout(() => {
+      dummy.current.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "nearest",
+      });
+    });
+  };
 
   const getStats = () => {
     const completed = initalRoutes.filter(
@@ -28,9 +39,9 @@ function Stats(props) {
 
     const getGrades = completed.map((route) => {
       if (route.difficulty[0] in gradeDistribution)
-      //slice is combining + and -
-        gradeDistribution[route.difficulty[0].replace(/\+|\-/ig, '')] += 1;
-      else gradeDistribution[route.difficulty[0].replace(/\+|\-/ig, '')] = 1;
+        //slice is combining + and -
+        gradeDistribution[route.difficulty[0].replace(/\+|\-/gi, "")] += 1;
+      else gradeDistribution[route.difficulty[0].replace(/\+|\-/gi, "")] = 1;
     });
 
     return {
@@ -59,7 +70,7 @@ function Stats(props) {
       "#FF9878",
       "#FF7878",
     ].reverse();
-    
+
     for (const grade in stats.gradeDistribution) {
       data.push({
         title: grade,
@@ -81,13 +92,15 @@ function Stats(props) {
   return (
     <div className="h-screen">
       <section className=" flex flex-col justify-around items-center my-2 py-10">
-        <Picture/>
+        <Picture />
         <section className="flex flex-row flex-wrap justify-center md:items-start md:justify-start w-90 my-5">
           <span className="mx-5 text-left">
             <h2 className="font-bold text-base md:text-left">
               {"Routes Completed"}
             </h2>
-            <h1 className="text-3xl font-bold text-center">{stats.routesCompleted}</h1>
+            <h1 className="text-3xl font-bold text-center">
+              {stats.routesCompleted}
+            </h1>
           </span>
           <span className="mx-5 text-left">
             <h2 className="font-bold text-base md:text-left">
@@ -99,7 +112,9 @@ function Stats(props) {
             <h2 className="font-bold text-base md:text-left">
               {"Highest Completed Grade"}
             </h2>
-            <h1 className="text-3xl font-bold text-center">{stats.highestGrade}</h1>
+            <h1 className="text-3xl font-bold text-center">
+              {stats.highestGrade}
+            </h1>
           </span>
         </section>
         {emptyGraph && (
@@ -154,28 +169,29 @@ function Stats(props) {
         )}
 
         <div className="flex flex-col mb-14">
-          <Button
-            text={"Reset Progress"}
-            handleClick={() => setResetMsg(!resetMsg)}
-          />
+          <Button text={"Reset Progress"} handleClick={scrollToBottom} />
           {resetMsg && (
             <>
               <br />
-              <span className="text-red-500 text-center mb-10">Are you sure?</span>
+              <span className="text-red-500 text-center mb-10">
+                Are you sure?
+              </span>
               <Button
                 text={"Yes"}
-                color={"text-red-500 border-red-500 hover:bg-red-500 px-2 mb-14"}
+                color={
+                  "text-red-500 border-red-500 hover:bg-red-500 px-2 mb-14"
+                }
                 handleClick={() => {
-                  localStorage.clear()
-                  navigate("/")
-                }
-                }
+                  localStorage.clear();
+                  navigate("/");
+                }}
               />
             </>
           )}
         </div>
       </section>
-      <Navbar/>
+      <Navbar />
+      <div ref={dummy}></div>
     </div>
   );
 }
